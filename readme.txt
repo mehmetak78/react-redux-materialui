@@ -53,7 +53,21 @@ For managing the git and github
 
 
     Adding A New Branch
-        
+        - /Webstorm/VCS/Git/Branches
+            - Create A New Branch
+                master-clean
+
+    Changing Working Branch
+        - /Webstorm/VCS/Git/Branches
+            - select the branch
+                checkout
+
+    When you push to the github (/Webstorm/VCS/Git/Push)
+        working branch will be pushed
+        c
+
+
+
 
 --------------------------------------------- SERVER ------------------------------------
 

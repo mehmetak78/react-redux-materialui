@@ -17,24 +17,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+            <state relative-caret-position="773">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="TopMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-690" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readMeClient.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -79,6 +81,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master-clean" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -100,6 +107,7 @@
         <option value="$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
         <option value="$PROJECT_DIR$/readme2.txt" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -203,7 +211,7 @@
       <workItem from="1552241964953" duration="3604000" />
       <workItem from="1552246128536" duration="110000" />
       <workItem from="1552246396028" duration="530000" />
-      <workItem from="1552247005648" duration="1098000" />
+      <workItem from="1552247005648" duration="1557000" />
     </task>
     <task id="LOCAL-00001" summary="added a new file">
       <created>1552247923230</created>
@@ -212,11 +220,25 @@
       <option name="project" value="LOCAL" />
       <updated>1552247923230</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="deleted new file">
+      <created>1552248283516</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552248283516</updated>
+    </task>
+    <task id="LOCAL-00003" summary="deleted new file">
+      <created>1552248353229</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552248353229</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27450000" />
+    <option name="totallyTimeSpent" value="28049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1438" height="1409" extended-state="0" />
@@ -249,9 +271,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added a new file" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a new file" />
+    <MESSAGE value="deleted new file" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted new file" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
+    <entry file="file://$PROJECT_DIR$/readme2.txt" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -289,24 +344,31 @@
     <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt" />
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/client/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-690" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="9" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="37" lean-forward="true" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
