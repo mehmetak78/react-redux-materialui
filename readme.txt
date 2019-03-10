@@ -34,6 +34,8 @@ For managing the git and github
     - Open the Webstorm Project from the root directory
         /Webstorm/File/Open -> /react-redux-materialui
 
+    - Or you can change the root of git in "Webstorm/Preferences/Version Control"
+
     - Share Project to github by Webstorm
         /Webstorm/VCS/Import into Version Control | Share Project on GitHub.
         If you have not registered your account in WebStorm, the Login to GitHub dialog opens.
