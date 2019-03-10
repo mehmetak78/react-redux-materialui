@@ -64,7 +64,6 @@ For managing the git and github
 
     When you push to the github (/Webstorm/VCS/Git/Push)
         working branch will be pushed
-        c
 
 
 
