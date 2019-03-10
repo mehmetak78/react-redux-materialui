@@ -21,7 +21,8 @@ The Directory Configuaration will be as following
 For managing the git and github
     - Create folder : /react-redux-materialui
     - Create folder : /server
-    -
+    - cd server
+        - npm init
     - in the root
         - git init
         - git status
@@ -36,14 +37,9 @@ For managing the git and github
 
 
 --------------------------------------------- SERVER ------------------------------------
-- cd server
-- npm init
+
 
 --------------------------------------------- CLIENT ------------------------------------
-- Webstorm new react app inside .../server/client
-
-- cd server
-- cd client
 
 - copy index.html
 
