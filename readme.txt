@@ -30,10 +30,11 @@ For managing the git and github
         - git commit -m "First Commit"
     - Then Create the /client folder with
         - Create React App tool, in Webstorm (or manually)
+        - There can be a warning about git while creating the client. Choose "Add Root" there.
     - Open the Webstorm Project from the root directory
         /Webstorm/File/Open -> /react-redux-materialui
 
-
+git add
 
 
 --------------------------------------------- SERVER ------------------------------------
