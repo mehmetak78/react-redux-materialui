@@ -77,7 +77,7 @@ For managing the git and github
 		- For updating the project in Webstorm
 			- /Webstorm/VCS/Update Project
 
-
+edit
 --------------------------------------------- SERVER ------------------------------------
 
 
