@@ -72,6 +72,10 @@ For managing the git and github
 		- In directories which have "package.json"
 			- run "npm install"
 
+	For Deleting a Branch
+		- Delete it in the web site of github
+		- For updating the project in Webstorm
+			- /Webstorm/VCS/Update Project
 
 
 --------------------------------------------- SERVER ------------------------------------
