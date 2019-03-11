@@ -67,6 +67,10 @@ For managing the git and github
     When you push to the github (/Webstorm/VCS/Git/Push)
         working branch will be pushed
 
+	For Openin The Project in a new environment
+		- Webstorm/VCS/Checkout from Version Control
+		- In directories which have "package.json"
+			- run "npm install"
 
 
 
