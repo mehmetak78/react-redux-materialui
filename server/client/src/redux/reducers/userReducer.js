@@ -1,6 +1,7 @@
 import {LOGIN_USER, LOGOUT_USER} from "../actions/actionTypes";
 
 const initialState = {
+    isLogging: false,
     isAuthenticatied : false,
     userId : 0,
     userName :""

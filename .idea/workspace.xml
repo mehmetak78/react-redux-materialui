@@ -2,7 +2,259 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86b66429-76e9-4176-bee9-24dea9f2b8e5" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/github/material-dashboard-pro-react.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/bg-pricing.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/card-1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/card-2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/card-3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/default-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/faces/avatar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/faces/card-profile1-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/faces/card-profile2-square.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/faces/marc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/AU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/BE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/BF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/BO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/BR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/CZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/DJ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/DK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/DZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/EE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/EG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/ES.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/FI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/FR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/GA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/GB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/GM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/GT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/HN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/HT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/HU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/ID.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/IT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/JM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/JO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/JP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/KZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/LV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/MG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/MK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/ML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/MM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/MT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/MX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/NO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/OM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/PY.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/QA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/RO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/RU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/RW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/SV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/TD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/TJ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/TL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/TR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/TZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/UA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/VE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/VN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/flags/YE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/header-doc.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/image_placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/lock.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/login.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/logo-white.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/product1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/product2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/product3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/register.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/sidebar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/sidebar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/sidebar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/img/sidebar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/buttonGroupStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/cardImagesStyles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/accordionStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/badgeStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/buttonStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardAvatarStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardBodyStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardFooterStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardHeaderStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardIconStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardTextStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customDropdownStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customInputStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customLinearProgressStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customTabsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/footerStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/headerLinksStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/headerStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/headingStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/infoStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/instructionStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/navPillsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/paginationStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/sidebarStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/snackbarContentStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/tableStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/tasksStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/timelineStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/typographyStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/wizardStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/customCheckboxRadioSwitch.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/customSelectStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/hoverCardStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/dashboardStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/rtlStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/modalStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/buttonsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/chartsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/dashboardStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/extendedFormsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/extendedTablesStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/gridSystemStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/iconsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/lockScreenPageStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/notificationsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/pricingPageStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/registerPageStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/regularFormsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/sweetAlertStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/userProfileStyles.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/validationFormsStyle.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_colors.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_fileupload.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_shadows.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/mixins/_sidebar-color.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-nouislider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-perfect-scrollbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-big-calendar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-bootstrap-sweetalert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-datetime.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-jvectormap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-table.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/assets/scss/material-dashboard-pro-react/plugins/_plugin-react-tagsinput.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Accordion/Accordion.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Badge/Badge.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/Card.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardAvatar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardBody.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardFooter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardIcon.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Card/CardText.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Clearfix/Clearfix.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomButtons/Button.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomDropdown/CustomDropdown.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomInput/CustomInput.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomLinearProgress/CustomLinearProgress.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomTabs/CustomTabs.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomUpload/ImageUpload.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/CustomUpload/PictureUpload.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Footer/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Grid/GridContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Grid/GridItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Header/HeaderLinks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Header/PagesHeader.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Heading/Heading.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/InfoArea/InfoArea.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Instruction/Instruction.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/NavPills/NavPills.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Pagination/Pagination.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Snackbar/Snackbar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Snackbar/SnackbarContent.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Table/Table.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Tasks/Tasks.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Timeline/Timeline.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Danger.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Info.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Muted.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Primary.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Quote.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Success.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Typography/Warning.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/md-components/Wizard/Wizard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/client/src/pageComponents/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/client/src/layouts/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/layouts/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,27 +268,87 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/readme.txt">
+      <file leaf-file-name="MiddlePage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MiddlePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+            <state>
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopMenu.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
+      <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#302#363#0" expanded="true" />
+                <element signature="e#618#678#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Landing.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/pageComponents/Landing.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/styles/index.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/client/package.json">
+      <file leaf-file-name="Landing.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/styles/Landing.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="MainPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/styles/MainPage.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pagesStyle.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="480">
+              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pagesHeaderStyle.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -85,12 +397,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server/client/src/index.js" />
-        <option value="$PROJECT_DIR$/server/client/public/index.html" />
         <option value="$PROJECT_DIR$/server/client/src/redux/store.js" />
         <option value="$PROJECT_DIR$/server/client/src/redux/actions/index.js" />
-        <option value="$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
         <option value="$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
-        <option value="$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
         <option value="$PROJECT_DIR$/server/client/src/App.js" />
         <option value="$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
         <option value="$PROJECT_DIR$/server/client/src/layouts/TopMenu.js" />
@@ -102,6 +411,23 @@
         <option value="$PROJECT_DIR$/readme2.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/readme.txt" />
+        <option value="$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
+        <option value="$PROJECT_DIR$/server/client/src/pageComponents/Login.js" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/CustomButtons/Button.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/buttonStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/Card/CardBody.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/Card/CardFooter.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/Card/CardHeader.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardHeaderStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/CustomInput/CustomInput.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customInputStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/public/index.html" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/Card/Card.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/md-components/Header/PagesHeader.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx" />
+        <option value="$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
       </list>
     </option>
   </component>
@@ -111,17 +437,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/server/client/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/server/client/package.json" />
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-2560" />
+    <option name="y" value="23" />
+    <option name="width" value="1320" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -147,6 +476,121 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="jss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="jss" type="462c0819:PsiDirectoryNode" />
+              <item name="material-dashboard-pro-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="jss" type="462c0819:PsiDirectoryNode" />
+              <item name="material-dashboard-pro-react" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="jss" type="462c0819:PsiDirectoryNode" />
+              <item name="material-dashboard-pro-react" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="jss" type="462c0819:PsiDirectoryNode" />
+              <item name="material-dashboard-pro-react" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="md-components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="md-components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pageComponents" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -163,15 +607,15 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/server/client/src/redux/reducers" />
-      <recent name="$PROJECT_DIR$/server/client/src" />
-      <recent name="$PROJECT_DIR$/server/client/src/layouts" />
-      <recent name="$PROJECT_DIR$/server/client/src/redux/actions" />
-      <recent name="$PROJECT_DIR$/server/client/src/redux" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server/client/src" />
+      <recent name="$PROJECT_DIR$/server/client/src/md-components" />
+      <recent name="$PROJECT_DIR$/server/client/src/redux/reducers" />
+      <recent name="$PROJECT_DIR$/server/client/src/layouts" />
+      <recent name="$PROJECT_DIR$/server/client/src/redux/actions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -246,24 +690,31 @@
       <option name="project" value="LOCAL" />
       <updated>1552331932796</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="new update">
+      <created>1552331970637</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552331970637</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29944000" />
+    <option name="totallyTimeSpent" value="34201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2571" y="23" width="1320" height="1381" extended-state="0" />
+    <frame x="-2560" y="23" width="1320" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2786759" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2786759" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.21015067" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.20431766" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -298,63 +749,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="new update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
-    <entry file="file://$PROJECT_DIR$/readme2.txt" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt" />
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/index.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/public/index.html" />
     <entry file="file://$PROJECT_DIR$/server/package.json" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/errorReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/components/common/IconMehmet.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/pageComponents/Orders.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/styles/MainPage.css" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/styles/index.css" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/store.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
@@ -362,9 +767,6 @@
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
     <entry file="file://$PROJECT_DIR$/readme2.txt" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt" />
     <entry file="file://$PROJECT_DIR$/server/client/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -382,18 +784,215 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="59" column="28" lean-forward="true" selection-start-line="59" selection-start-column="28" selection-end-line="59" selection-end-column="28" />
+        <state relative-caret-position="340">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Accordion/Accordion.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/pageComponents/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#96#157#0" expanded="true" />
+            <element signature="e#287#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/CustomButtons/Button.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#222#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/buttonStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#99#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardBodyStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Card/CardBody.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Card/CardFooter.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Card/CardHeader.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardHeaderStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/cardStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/CustomInput/CustomInput.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/customInputStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/client/package.json">
+    <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Header/PagesHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="1380">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#169#230#0" expanded="true" />
+            <element signature="e#656#709#0" expanded="true" />
+            <element signature="e#774#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MiddlePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/pageComponents/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/styles/Landing.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/styles/MainPage.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#302#363#0" expanded="true" />
+            <element signature="e#618#678#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
