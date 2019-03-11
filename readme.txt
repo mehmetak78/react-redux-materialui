@@ -72,7 +72,7 @@ For managing the git and github
 		- In directories which have "package.json"
 			- run "npm install"
 
-
+edit v1
 
 --------------------------------------------- SERVER ------------------------------------
 
