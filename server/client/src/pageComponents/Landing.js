@@ -5,7 +5,7 @@ import LoginIcon from '@material-ui/icons/ExitToApp';
 import SignUpIcon from '@material-ui/icons/PlayForWork';
 import {withStyles} from '@material-ui/core/styles';
 
-import "../styles/Landing.css"
+//import "../styles/Landing.css"
 
 const styles = theme => ({
 
