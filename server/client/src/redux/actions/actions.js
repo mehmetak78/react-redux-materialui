@@ -1,4 +1,4 @@
-import {LOGIN_USER, LOGOUT_USER} from "./actionTypes";
+import {OPEN_LOGIN_PAGE,CLOSE_LOGIN_PAGE,LOGIN_USER, LOGOUT_USER} from "./actionTypes";
 import {TOGGLE_DRAWER, TOGGLE_THEME} from "./actionTypes";
 import {INIT_TOP_MENU, SET_BADGET_CONTENT, OPEN_MENU, CLOSE_MENU, SET_SHOW_SUBMENU_ITEMSICONS} from "./actionTypes";
 import {SET_LEFT_MENU} from "./actionTypes";
@@ -46,6 +46,13 @@ export const initApp = () => dispatch =>
 
 
 // User Actions
+export const openLoginPage = () =>dispatch => {
+    dispatch({type: OPEN_LOGIN_PAGE, payload: ""});
+};
+export const closeLoginPage = () =>dispatch => {
+    dispatch({type: CLOSE_LOGIN_PAGE, payload: ""});
+};
+
 export const logoutUser = (history) =>dispatch => {
         //localStorage.removeItem("jwtToken");
         //setAuthorizationToken(false);

@@ -22,7 +22,7 @@ const pagesStyle = theme => ({
         "&:before": {
             backgroundImage: `url(${bgImg})`,
             backgroundSize:"cover",
-            backgroundR: "no-repeat",
+            backgroundRepeat: "no-repeat",
         },
         "&:before,&:after": {
             content: "''",

@@ -45,13 +45,25 @@ class LoginPage extends React.Component {
         clearTimeout(this.timeOutFunction);
         this.timeOutFunction = null;
     }
+
+    handleCancel = () => {
+        const { closeLoginPage } = this.props;
+        closeLoginPage();
+    };
+
+
+    handleSubmit = () => {
+        const { loginUser } = this.props;
+        loginUser();
+    };
+
     render() {
-        const { classes } = this.props;
+        const {classes } = this.props;
         return (
             <div className={classes.container}>
                 <GridContainer justify="center">
                     <GridItem xs={12} sm={6} md={4}>
-                        <form>
+                        <form onSubmit={this.handleSubmit}>
                             <Card login className={classes[this.state.cardAnimaton]}>
                                 <CardHeader
                                     className={`${classes.cardHeader} ${classes.textCenter}`}
@@ -124,7 +136,10 @@ class LoginPage extends React.Component {
                                     />
                                 </CardBody>
                                 <CardFooter className={classes.justifyContentCenter}>
-                                    <Button color="rose" simple size="lg" block>
+                                    <Button onClick={this.handleCancel} color="rose" simple size="lg" block>
+                                        Cancel
+                                    </Button>
+                                    <Button onClick={this.handleSubmit} color="rose" simple size="lg" block>
                                         Login
                                     </Button>
                                 </CardFooter>

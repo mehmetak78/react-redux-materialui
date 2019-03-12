@@ -31,7 +31,7 @@ class Landing extends Component {
 
 
     render() {
-        const {classes, handleLogIn} = this.props;
+        const {classes, openLoginPage} = this.props;
 
         return (
             <div>
@@ -48,7 +48,7 @@ class Landing extends Component {
 
 
                         <Button variant="contained" color="secondary" className={classes.button}
-                            onClick={handleLogIn}>
+                            onClick={openLoginPage}>
                             Login
                             <LoginIcon className={classes.rightIcon} />
                         </Button>
