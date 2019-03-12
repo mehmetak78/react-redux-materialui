@@ -22,7 +22,7 @@ const styles = theme => ({
         fontSize: 20,
     },
     paperContainer: {
-        backgroundImage: `url(${"../img/showcase.jpg"})`
+        //backgroundImage: `url(${"../img/showcase.jpg"})`
     }
 });
 
@@ -34,8 +34,7 @@ class Landing extends Component {
         const {classes, handleLogIn} = this.props;
 
         return (
-            <div className={"landing"}>
-                <div className={"landingInner"}>
+            <div>
 
                     <h1 >
                         Sample Application
@@ -55,7 +54,6 @@ class Landing extends Component {
                         </Button>
 
 
-                </div>
             </div>
         );
     }

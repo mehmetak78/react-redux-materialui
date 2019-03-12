@@ -19,7 +19,7 @@ import {loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/a
 
 import pagesStyle from "../styles/MainPageStyles.js";
 //import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
-import bgImage from "../img/bg.jpg";
+
 
 class MainPage extends Component {
     getTheme = () => {
@@ -85,7 +85,7 @@ class MainPage extends Component {
                                 :
                                 <div
                                     className={classes.fullPage}
-                                    style={{ backgroundImage: "url(" + bgImage + ")" }}
+
                                 >
                                     {isLogging
                                         ? <Login/>

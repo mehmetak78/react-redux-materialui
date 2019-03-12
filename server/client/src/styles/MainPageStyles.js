@@ -1,47 +1,43 @@
+
+const bgImg = require("../img/bg.jpg");
+
 const pagesStyle = theme => ({
     App: {
         display: "flex!important"
     },
-    wrapper: {
-        height: "auto",
-        minHeight: "100vh",
-        position: "relative",
-        top: "0"
-    },
-    fullPage: {
 
-        padding: "120px 0",
-        position: "relative",
-        minHeight: "100vh",
+    fullPage: {
         display: "flex!important",
-        margin: "0",
-        border: "0",
-        color: "#fff",
+        height: "100vh",
+        width: "100%",
+        position: "relative",
+        padding:"0",
+        margin:"0",
+        textAlign:"center",
         alignItems: "center",
-        backgroundSize: "cover",
-        backgroundPosition: "center center",
-        height: "100%",
-        [theme.breakpoints.down("sm")]: {
-            minHeight: "fit-content!important"
-        },
-        "& footer": {
-            position: "absolute",
-            bottom: "0",
-            width: "100%",
-            border: "none !important"
-        },
+
+        justifyContent: "center",
+
+        color:"blue",
         "&:before": {
-            backgroundColor: "rgba(100, 100, 100, 0.5)"
+            backgroundImage: `url(${bgImg})`,
+            backgroundSize:"cover",
+            backgroundR: "no-repeat",
         },
         "&:before,&:after": {
+            content: "''",
             display: "flex",
-            content: '',
-            position: "absolute",
-            width: "100%",
-            height: "100%",
+            //backgroundColor: "rgba(0, 0, 233)",
+            backgroundColor: theme.palette.background.primary,
+            opacity: "0.2",
             top: "0",
             left: "0",
-            zIndex: "2"
+            bottom: "0",
+            right: "0",
+            position: "absolute",
+            zIndex: "-1",
+
+
         }
     }
 });
