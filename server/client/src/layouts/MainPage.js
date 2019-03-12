@@ -11,19 +11,15 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import TopMenu from "./TopMenu";
 import LeftMenu from "./LeftMenu";
 import MiddlePage from "./MiddlePage"
-import '../styles/MainPage.css';
+
 import Landing from '../pageComponents/Landing';
 import Login from '../pageComponents/Login';
 
 import {loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
 
-// core components
-import PagesHeader from "../md-components/Header/PagesHeader.jsx";
-
-import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
-
-
-import bgImage from "../assets/img/register.jpeg";
+import pagesStyle from "../styles/MainPageStyles.js";
+//import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
+import bgImage from "../img/bg.jpg";
 
 class MainPage extends Component {
     getTheme = () => {
@@ -65,10 +61,10 @@ class MainPage extends Component {
     render() {
         const { menuOpened } = this.props.mainPage;
 
-        const isLogging = true;
+        const isLogging = false;
         const {isAuthenticated} = this.props.user;
 
-        const { classes, ...rest } = this.props;
+        const { classes } = this.props;
 
 
         const {loginUser, logoutUser, toggleDrawer, toggleTheme} = this.props;
@@ -78,36 +74,28 @@ class MainPage extends Component {
             <BrowserRouter>
                 <CssBaseline>
                     <MuiThemeProvider theme={this.getTheme()}>
-                        <div className={""}>
-                            {isLogging ?
-
-                                    <div>
-                                        <PagesHeader {...rest} />
-                                        <div className={classes.wrapper} ref="wrapper">
-                                            <div
-                                                className={classes.fullPage}
-                                                style={{ backgroundImage: "url(" + bgImage + ")" }}
-                                            >
-                                                <Login />
-
-                                            </div>
-                                        </div>
-                                    </div>
+                        {
+                            isAuthenticated ?
+                                <div className={classes.App}>
+                                    <TopMenu toggleDrawer={toggleDrawer} handleLogOut={logoutUser}
+                                             handleToggleTheme={toggleTheme}/>
+                                    <LeftMenu menuOpened={menuOpened}/>
+                                    <MiddlePage/>
+                                </div>
                                 :
-                                isAuthenticated ?
-                                    <Fragment>
-                                        <TopMenu toggleDrawer={toggleDrawer} handleLogOut={logoutUser} handleToggleTheme={toggleTheme}/>
-                                        <LeftMenu menuOpened={menuOpened}/>
-                                        <MiddlePage/>
-                                    </Fragment>
-                                    :
-                                    <Fragment>
-                                        <Landing handleLogIn={loginUser}/>
-                                    </Fragment>
-
-                            }
-                        </div>
+                                <div
+                                    className={classes.fullPage}
+                                    style={{ backgroundImage: "url(" + bgImage + ")" }}
+                                >
+                                    {isLogging
+                                        ? <Login/>
+                                        : <Landing handleLogIn={loginUser}/>
+                                    }
+                                </div>
+                        }
                     </MuiThemeProvider>
+
+
                 </CssBaseline>
             </BrowserRouter>
         );

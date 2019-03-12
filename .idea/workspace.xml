@@ -271,14 +271,20 @@
       <file leaf-file-name="MiddlePage.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MiddlePage.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state>
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+=======
+            <state relative-caret-position="1207">
+              <caret line="77" selection-start-line="77" selection-end-line="77" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="MainPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -330,12 +336,38 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
               <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+=======
+      <file leaf-file-name="dene.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dene.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file leaf-file-name="pagesHeaderStyle.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx">
+=======
+      <file leaf-file-name="LeftMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopMenu.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/client/package.json">
+>>>>>>> Stashed changes
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
               <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
@@ -411,6 +443,7 @@
         <option value="$PROJECT_DIR$/readme2.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/readme.txt" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/server/client/src/redux/reducers/userReducer.js" />
         <option value="$PROJECT_DIR$/server/client/src/pageComponents/Login.js" />
         <option value="$PROJECT_DIR$/server/client/src/md-components/CustomButtons/Button.jsx" />
@@ -428,6 +461,9 @@
         <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/components/pagesHeaderStyle.jsx" />
         <option value="$PROJECT_DIR$/server/client/src/assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx" />
         <option value="$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
+=======
+        <option value="$PROJECT_DIR$/dene.xml" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -446,11 +482,18 @@
       <path value="$PROJECT_DIR$/server/package.json" />
     </packageJsonPaths>
   </component>
+<<<<<<< Updated upstream
   <component name="ProjectFrameBounds">
     <option name="x" value="-2560" />
     <option name="y" value="23" />
     <option name="width" value="1320" />
     <option name="height" value="1417" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="14" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -481,6 +524,7 @@
               <item name="react-redux-materialui" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -506,6 +550,9 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="jss" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
             <path>
               <item name="react-redux-materialui" type="b2602c69:ProjectViewProjectNode" />
@@ -513,6 +560,7 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="jss" type="462c0819:PsiDirectoryNode" />
               <item name="material-dashboard-pro-react" type="462c0819:PsiDirectoryNode" />
@@ -591,6 +639,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
+=======
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+>>>>>>> Stashed changes
           </expand>
           <select />
         </subPane>
@@ -647,6 +699,9 @@
       <workItem from="1552247005648" duration="1557000" />
       <workItem from="1552286893726" duration="163000" />
       <workItem from="1552287069192" duration="1016000" />
+      <workItem from="1552300395462" duration="699000" />
+      <workItem from="1552307153623" duration="4000" />
+      <workItem from="1552307505659" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="added a new file">
       <created>1552247923230</created>
@@ -701,7 +756,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="34201000" />
+=======
+    <option name="totallyTimeSpent" value="32837000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-2560" y="23" width="1320" height="1417" extended-state="0" />
@@ -711,10 +770,19 @@
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+<<<<<<< Updated upstream
+=======
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32715008" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+<<<<<<< Updated upstream
       <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.20431766" />
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.3726813" />
+      <window_info id="Favorites" order="0" side_tool="true" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -749,6 +817,48 @@
     <option name="LAST_COMMIT_MESSAGE" value="new update" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actions.js" />
+    <entry file="file://$PROJECT_DIR$/readme2.txt" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/App.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/readMeClient.txt" />
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="65" column="37" selection-start-line="65" selection-start-column="37" selection-end-line="65" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js" />
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
@@ -761,7 +871,6 @@
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/store.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/data/topMenuData.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/appReducer.js" />
-    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/actions/actionTypes.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/layoutReducer.js" />
     <entry file="file://$PROJECT_DIR$/server/client/src/redux/reducers/rootReducer.js" />
@@ -920,6 +1029,7 @@
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/TopMenu.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/server/client/src/md-components/Header/PagesHeader.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1380">
@@ -930,6 +1040,19 @@
             <element signature="e#656#709#0" expanded="true" />
             <element signature="e#774#827#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/dene.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/client/src/layouts/LeftMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="143" column="18" selection-start-line="143" selection-start-column="18" selection-end-line="143" selection-end-column="18" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
@@ -986,6 +1109,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/client/src/layouts/MainPage.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="462">
           <caret line="80" column="41" selection-start-line="80" selection-start-column="41" selection-end-line="80" selection-end-column="41" />
           <folding>
@@ -993,6 +1117,10 @@
             <element signature="e#302#363#0" expanded="true" />
             <element signature="e#618#678#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="1207">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>

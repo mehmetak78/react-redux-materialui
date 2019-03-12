@@ -10,9 +10,9 @@
 
 .landing::after {
     content: "";
-    background: url('../img/showcase.jpg') no-repeat;
+    background: url('../img/bg.jpg') no-repeat;
     background-color: red;
-    opacity: 0.3;
+    opacity: 0.2;
     top: 0;
     left: 0;
     bottom: 0;

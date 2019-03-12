@@ -125,7 +125,7 @@ class LoginPage extends React.Component {
                                 </CardBody>
                                 <CardFooter className={classes.justifyContentCenter}>
                                     <Button color="rose" simple size="lg" block>
-                                        Let's Go
+                                        Login
                                     </Button>
                                 </CardFooter>
                             </Card>
