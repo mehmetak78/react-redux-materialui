@@ -1,5 +1,6 @@
 
-const bgImg = require("../img/bg.jpg");
+//const bgImg = require("../img/bg.jpg");
+import bgImg from "../img/bg.jpg"
 
 const pagesStyle = theme => ({
     App: {
@@ -26,16 +27,14 @@ const pagesStyle = theme => ({
         },
         "&:before,&:after": {
             content: "''",
-            display: "flex",
-            //backgroundColor: "rgba(0, 0, 233)",
             backgroundColor: theme.palette.background.primary,
-            opacity: "0.2",
+            opacity: "0.4",
             top: "0",
             left: "0",
             bottom: "0",
             right: "0",
             position: "absolute",
-            zIndex: "-1",
+            zIndex: "0",
 
 
         }
