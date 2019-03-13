@@ -22,7 +22,7 @@ const styles = theme => ({
         fontSize: 20,
     },
     paperContainer: {
-        backgroundImage: `url(${"../img/showcase.jpg"})`
+        //backgroundImage: `url(${"../img/showcase.jpg"})`
     }
 });
 
@@ -31,11 +31,10 @@ class Landing extends Component {
 
 
     render() {
-        const {classes, handleLogIn} = this.props;
+        const {classes, openLoginPage} = this.props;
 
         return (
-            <div className={"landing"}>
-                <div className={"landingInner"}>
+            <div>
 
                     <h1 >
                         Sample Application
@@ -49,13 +48,12 @@ class Landing extends Component {
 
 
                         <Button variant="contained" color="secondary" className={classes.button}
-                            onClick={handleLogIn}>
+                            onClick={openLoginPage}>
                             Login
                             <LoginIcon className={classes.rightIcon} />
                         </Button>
 
 
-                </div>
             </div>
         );
     }

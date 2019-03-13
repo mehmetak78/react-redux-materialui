@@ -1,4 +1,4 @@
-import {LOGIN_USER, LOGOUT_USER} from "../actions/actionTypes";
+import {OPEN_LOGIN_PAGE, CLOSE_LOGIN_PAGE, LOGIN_USER, LOGOUT_USER} from "../actions/actionTypes";
 
 const initialState = {
     isLogging: false,
@@ -9,10 +9,14 @@ const initialState = {
 
 export default function(state=initialState, action) {
     switch(action.type) {
+        case OPEN_LOGIN_PAGE:
+            return {...state,isLogging:true};
+        case CLOSE_LOGIN_PAGE:
+            return {...state,isLogging:false};
         case LOGIN_USER:
-            return {isAuthenticated:true, userId:1, userName:action.payload.userName};
+            return {...state,isAuthenticated:true, userId:1, userName:action.payload.userName};
         case LOGOUT_USER:
-            return {isAuthenticated:false, userId:0, userName:""};
+            return {...state,isAuthenticated:false, userId:0, userName:""};
         default:
             return state;
     }

@@ -1,7 +1,7 @@
 
-export const INIT_APPLICATION = "INIT_APPLICATION";
-
 // USER
+export const OPEN_LOGIN_PAGE = "OPEN_LOGIN_PAGE";
+export const CLOSE_LOGIN_PAGE = "CLOSE_LOGIN_PAGE";
 export const LOGIN_USER = "LOGIN_USER";
 export const LOGOUT_USER = "LOGOUT_USER";
 

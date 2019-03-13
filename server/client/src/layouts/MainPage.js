@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import {connect} from "react-redux";
 import {BrowserRouter} from "react-router-dom";
 
@@ -15,11 +15,10 @@ import MiddlePage from "./MiddlePage"
 import Landing from '../pageComponents/Landing';
 import Login from '../pageComponents/Login';
 
-import {loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
+import {openLoginPage, closeLoginPage, loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
 
 import pagesStyle from "../styles/MainPageStyles.js";
 //import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
-
 
 
 class MainPage extends Component {
@@ -61,22 +60,22 @@ class MainPage extends Component {
 
     render() {
         const { menuOpened } = this.props.mainPage;
+        const { isLogging } = this.props.user;
 
-        const isLogging = false;
+
         const {isAuthenticated} = this.props.user;
 
         const { classes } = this.props;
 
 
-        const {loginUser, logoutUser, toggleDrawer, toggleTheme} = this.props;
+        const {openLoginPage, closeLoginPage, loginUser, logoutUser, toggleDrawer, toggleTheme} = this.props;
 
 
         return (
             <BrowserRouter>
                 <CssBaseline>
                     <MuiThemeProvider theme={this.getTheme()}>
-                        {
-                            isAuthenticated ?
+                        { isAuthenticated ?
                                 <div className={classes.App}>
                                     <TopMenu toggleDrawer={toggleDrawer} handleLogOut={logoutUser}
                                              handleToggleTheme={toggleTheme}/>
@@ -86,16 +85,14 @@ class MainPage extends Component {
                                 :
                                 <div
                                     className={classes.fullPage}
-
                                 >
                                     {isLogging
-                                        ? <Login/>
-                                        : <Landing handleLogIn={loginUser}/>
+                                        ? <Login loginUser={loginUser} closeLoginPage={closeLoginPage}/>
+                                        : <Landing openLoginPage={openLoginPage} />
                                     }
                                 </div>
                         }
                     </MuiThemeProvider>
-
 
                 </CssBaseline>
             </BrowserRouter>
@@ -111,7 +108,7 @@ function mapStateToProps(reduxState) {
 }
 
 function mapDispatchToProps() {
-    return {loginUser,logoutUser, toggleDrawer, toggleTheme}
+    return {openLoginPage, closeLoginPage, loginUser, logoutUser, toggleDrawer, toggleTheme}
 }
 
 export default connect(mapStateToProps, mapDispatchToProps())(withStyles(pagesStyle)(MainPage));
