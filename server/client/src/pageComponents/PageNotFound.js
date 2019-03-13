@@ -2,9 +2,7 @@ import React, {Component, Fragment} from "react"
 import {Typography} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles';
 
-const styles = theme => ({
-    appBarSpacer: theme.mixins.toolbar,
-});
+import styles from "../styles/MainPageStyles";
 
 class PageNotFound extends Component {
     state = {};

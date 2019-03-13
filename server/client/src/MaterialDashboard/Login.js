@@ -11,10 +11,18 @@ import Face from "@material-ui/icons/Face";
 import Email from "@material-ui/icons/Email";
 // import LockOutline from "@material-ui/icons/LockOutline";
 
+// core components
+import GridContainer from "./Grid/GridContainer.jsx";
+import GridItem from "./Grid/GridItem.jsx";
+import CustomInput from "./CustomInput/CustomInput.jsx";
+import Button from "./CustomButtons/Button.jsx";
+import Card from "./Card/Card.jsx";
+import CardBody from "./Card/CardBody.jsx";
+import CardHeader from "./Card/CardHeader.jsx";
+import CardFooter from "./Card/CardFooter.jsx";
 
 
-//import loginPageStyle from "../assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx";
-import loginPageStyle from "../styles/LoginPageStyle";
+import loginPageStyle from "./assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx";
 
 class LoginPage extends React.Component {
     constructor(props) {

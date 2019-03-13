@@ -13,11 +13,11 @@ import LeftMenu from "./LeftMenu";
 import MiddlePage from "./MiddlePage"
 
 import Landing from '../pageComponents/Landing';
-import Login from '../pageComponents/Login';
+import Login from '../MaterialDashboard/Login';
 
 import {openLoginPage, closeLoginPage, loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
 
-import pagesStyle from "../styles/MainPageStyles.js";
+import styles from "../styles/MainPageStyles.js";
 //import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
 
 
@@ -111,5 +111,5 @@ function mapDispatchToProps() {
     return {openLoginPage, closeLoginPage, loginUser, logoutUser, toggleDrawer, toggleTheme}
 }
 
-export default connect(mapStateToProps, mapDispatchToProps())(withStyles(pagesStyle)(MainPage));
+export default connect(mapStateToProps, mapDispatchToProps())(withStyles(styles)(MainPage));
 

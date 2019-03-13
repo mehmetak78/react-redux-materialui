@@ -2,9 +2,8 @@ import React, {Component, Fragment} from "react"
 import {Typography} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles';
 import SimpleLineChart from "../components/SimpleLineChart";
-const styles = theme => ({
-    appBarSpacer: theme.mixins.toolbar,
-});
+
+import styles from "../styles/MainPageStyles";
 
 class Orders extends Component {
     state = {};

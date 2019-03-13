@@ -11,16 +11,7 @@ import Orders from '../pageComponents/Orders';
 import Products from '../pageComponents/Products';
 import PageNotFound from '../pageComponents/PageNotFound';
 
-const styles = theme => ({
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing.unit * 3,
-        height: '100vh',
-        overflow: 'auto',
-        backgroundColor: theme.palette.background.default,
-    },
-});
-
+import styles from "../styles/MiddlePageStyles";
 
 class MiddlePage extends Component {
     render() {

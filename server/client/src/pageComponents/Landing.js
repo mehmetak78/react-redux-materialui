@@ -5,41 +5,17 @@ import LoginIcon from '@material-ui/icons/ExitToApp';
 import SignUpIcon from '@material-ui/icons/PlayForWork';
 import {withStyles} from '@material-ui/core/styles';
 
-//import "../styles/Landing.css"
-
-const styles = theme => ({
-
-    button: {
-        margin: theme.spacing.unit,
-    },
-    leftIcon: {
-        marginRight: theme.spacing.unit,
-    },
-    rightIcon: {
-        marginLeft: theme.spacing.unit,
-    },
-    iconSmall: {
-        fontSize: 20,
-    },
-    paperContainer: {
-        //backgroundImage: `url(${"../img/showcase.jpg"})`
-    }
-});
+import styles from "../styles/LandingStyles"
 
 class Landing extends Component {
     state = {};
-
-
     render() {
         const {classes, openLoginPage} = this.props;
 
         return (
-            <div>
-
-                    <h1 >
-                        Sample Application
-                    </h1>
-                    <Typography variant="subtitle1">This is a sample Application</Typography>
+            <div className={classes.root}>
+                    <Typography variant="h3" align="center">This is a sample Application</Typography>
+                    <Typography variant="subtitle1" align="center">This is a sample Application</Typography>
 
                         <Button variant="contained" color="primary"  className={classes.button}>
                             Sign Up

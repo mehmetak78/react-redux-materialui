@@ -5,9 +5,7 @@ import {withStyles} from '@material-ui/core/styles';
 import SimpleLineChart from "../components/SimpleLineChart";
 import SimpleTable from "../components/SimpleTable";
 
-const styles = theme => ({
-    appBarSpacer: theme.mixins.toolbar,
-});
+import styles from "../styles/MainPageStyles";
 
 class Dashboard extends Component {
     state = {};

@@ -3,7 +3,7 @@ import {
   dangerColor,
   successColor,
   defaultFont
-} from "../../../../assets/jss/material-dashboard-pro-react.jsx";
+} from "../../material-dashboard-pro-react.jsx";
 
 const customInputStyle = {
   disabled: {

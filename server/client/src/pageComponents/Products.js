@@ -3,9 +3,7 @@ import {Typography} from '@material-ui/core';
 import {withStyles} from '@material-ui/core/styles';
 import SimpleTable from "../components/SimpleTable";
 
-const styles = theme => ({
-    appBarSpacer: theme.mixins.toolbar,
-});
+import styles from "../styles/MainPageStyles";
 
 class Products extends Component {
     state = {};
