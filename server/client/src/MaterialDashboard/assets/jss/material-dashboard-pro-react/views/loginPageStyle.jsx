@@ -46,7 +46,8 @@ const loginPageStyle = theme => ({
     marginBottom: "20px"
   },
   socialLine: {
-    padding: "0.9375rem 0"
+      padding: "10rem 0",
+      margin:"10px"
   }
 });
 

@@ -22,7 +22,6 @@ class Landing extends Component {
                             <SignUpIcon className={classes.rightIcon} />
                         </Button>
 
-
                         <Button variant="contained" color="secondary" className={classes.button}
                             onClick={openLoginPage}>
                             Login

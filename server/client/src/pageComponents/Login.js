@@ -1,151 +1,113 @@
-import React from "react";
-import PropTypes from "prop-types";
-
-// @material-ui/core components
-import withStyles from "@material-ui/core/styles/withStyles";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import Icon from "@material-ui/core/Icon";
-
-// @material-ui/icons
-import Face from "@material-ui/icons/Face";
-import Email from "@material-ui/icons/Email";
-// import LockOutline from "@material-ui/icons/LockOutline";
 
 
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import {IconButton} from '@material-ui/core';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import FormControl from '@material-ui/core/FormControl';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Input from '@material-ui/core/Input';
+import InputLabel from '@material-ui/core/InputLabel';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import withStyles from '@material-ui/core/styles/withStyles';
+import {connect} from "react-redux";
+import {loginUser,closeLoginPage} from "../redux/actions/actions";
 
-//import loginPageStyle from "../assets/jss/material-dashboard-pro-react/views/loginPageStyle.jsx";
-import loginPageStyle from "../styles/LoginPageStyle";
+import styles from "../styles/LoginStyles"
 
-class LoginPage extends React.Component {
-    constructor(props) {
-        super(props);
-        // we use this to make the card to appear after the page has been rendered
-        this.state = {
-            cardAnimaton: "cardHidden"
-        };
-    }
-    componentDidMount() {
-        // we add a hidden class to the card and after 700 ms we delete it and the transition appears
-        this.timeOutFunction = setTimeout(
-            function() {
-                this.setState({ cardAnimaton: "" });
-            }.bind(this),
-            700
-        );
-    }
-    componentWillUnmount() {
-        clearTimeout(this.timeOutFunction);
-        this.timeOutFunction = null;
-    }
+class SignIn extends Component {
 
-    handleCancel = () => {
-        const { closeLoginPage } = this.props;
-        closeLoginPage();
-    };
-
-
-    handleSubmit = () => {
-        const { loginUser } = this.props;
-        loginUser();
-    };
 
     render() {
-        const {classes } = this.props;
+        const { classes } = this.props;
+
+        const { closeLoginPage ,loginUser} = this.props;
+
         return (
-            <div className={classes.container}>
-                <GridContainer justify="center">
-                    <GridItem xs={12} sm={6} md={4}>
-                        <form onSubmit={this.handleSubmit}>
-                            <Card login className={classes[this.state.cardAnimaton]}>
-                                <CardHeader
-                                    className={`${classes.cardHeader} ${classes.textCenter}`}
-                                    color="rose"
-                                >
-                                    <h4 className={classes.cardTitle}>Log in</h4>
-                                    <div className={classes.socialLine}>
-                                        {[
-                                            "fab fa-facebook-square",
-                                            "fab fa-twitter",
-                                            "fab fa-google-plus"
-                                        ].map((prop, key) => {
-                                            return (
-                                                <Button
-                                                    color="transparent"
-                                                    justIcon
-                                                    key={key}
-                                                    className={classes.customButtonClass}
-                                                >
-                                                    <i className={prop} />
-                                                </Button>
-                                            );
-                                        })}
-                                    </div>
-                                </CardHeader>
-                                <CardBody>
-                                    <CustomInput
-                                        labelText="First Name.."
-                                        id="firstname"
-                                        formControlProps={{
-                                            fullWidth: true
-                                        }}
-                                        inputProps={{
-                                            endAdornment: (
-                                                <InputAdornment position="end">
-                                                    <Face className={classes.inputAdornmentIcon} />
-                                                </InputAdornment>
-                                            )
-                                        }}
-                                    />
-                                    <CustomInput
-                                        labelText="Email..."
-                                        id="email"
-                                        formControlProps={{
-                                            fullWidth: true
-                                        }}
-                                        inputProps={{
-                                            endAdornment: (
-                                                <InputAdornment position="end">
-                                                    <Email className={classes.inputAdornmentIcon} />
-                                                </InputAdornment>
-                                            )
-                                        }}
-                                    />
-                                    <CustomInput
-                                        labelText="Password"
-                                        id="password"
-                                        formControlProps={{
-                                            fullWidth: true
-                                        }}
-                                        inputProps={{
-                                            endAdornment: (
-                                                <InputAdornment position="end">
-                                                    <Icon className={classes.inputAdornmentIcon}>
-                                                        lock_outline
-                                                    </Icon>
-                                                </InputAdornment>
-                                            )
-                                        }}
-                                    />
-                                </CardBody>
-                                <CardFooter className={classes.justifyContentCenter}>
-                                    <Button onClick={this.handleCancel} color="rose" simple size="lg" block>
-                                        Cancel
-                                    </Button>
-                                    <Button onClick={this.handleSubmit} color="rose" simple size="lg" block>
-                                        Login
-                                    </Button>
-                                </CardFooter>
-                            </Card>
-                        </form>
-                    </GridItem>
-                </GridContainer>
-            </div>
+            <main className={classes.main}>
+                <CssBaseline/>
+                <Paper className={classes.paper}>
+                    <Avatar className={classes.avatar}>
+                        <LockOutlinedIcon />
+                    </Avatar>
+                    <Typography component="h1" variant="h5">
+                        Sign in
+                    </Typography>
+
+                    <div className={classes.socialLine}>
+                        <IconButton color="primary" >
+                            <i className={"fab fa-facebook-f"} />
+                        </IconButton>
+                        <IconButton color="primary" >
+                            <i className={"fab fa-twitter "} />
+                        </IconButton>
+                        <IconButton color="primary" >
+                            <i className={"fab fa-google"} />
+                        </IconButton>
+                    </div>
+
+                    <form className={classes.form} onSubmit={loginUser}>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="email">Email Address</InputLabel>
+                            <Input id="email" name="email" autoComplete="email" autoFocus/>
+                        </FormControl>
+                        <FormControl margin="normal" required fullWidth>
+                            <InputLabel htmlFor="password">Password</InputLabel>
+                            <Input name="password" type="password" id="password" autoComplete="current-password"/>
+                        </FormControl>
+                        <FormControlLabel
+                            control={<Checkbox value="remember" color="primary"/>}
+                            label="Remember me"
+                        />
+                        <br/>
+                        <div className={classes.buttonsDiv}>
+                            <Button
+
+                                type="button"
+                                variant="contained"
+                                color="primary"
+                                className={classes.button}
+                                onClick={closeLoginPage}
+
+                            >
+                                Cancel
+                            </Button>
+                            <Button
+                                type="submit"
+
+                                variant="contained"
+                                color="primary"
+                                className={classes.button}
+
+                            >
+                                Sign in
+                            </Button>
+                        </div>
+                    </form>
+                </Paper>
+            </main>
         );
     }
 }
 
-LoginPage.propTypes = {
-    classes: PropTypes.object.isRequired
+SignIn.propTypes = {
+    classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(loginPageStyle)(LoginPage);
+function mapStateToProps(reduxState) {
+    return {
+        user: reduxState.user
+    }
+}
+
+function mapDispatchToProps() {
+    return {loginUser, closeLoginPage}
+}
+
+export default connect(mapStateToProps, mapDispatchToProps())(withStyles(styles)(SignIn));
+

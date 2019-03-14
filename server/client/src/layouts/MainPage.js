@@ -13,7 +13,8 @@ import LeftMenu from "./LeftMenu";
 import MiddlePage from "./MiddlePage"
 
 import Landing from '../pageComponents/Landing';
-import Login from '../MaterialDashboard/Login';
+import Login from '../pageComponents/Login';
+//import Login from '../MaterialDashboard/Login';
 
 import {openLoginPage, closeLoginPage, loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
 
