@@ -22,32 +22,42 @@ class BarChartsPage extends Component {
                 <Typography variant="h4" className={classes.sample}>
                     Bar Charts
                 </Typography>
-                <QueueAnim type="bottom" className="ui-animate">
+                <QueueAnim type="scale" duration={900}>
+                    <div key={1}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Bar1/>
                         </CardContent>
                     </Card>
+                    </div>
+                    <div key={2}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Bar2/>
                         </CardContent>
                     </Card>
+                    </div>
+                  <div key={3}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Bar3/>
                         </CardContent>
                     </Card>
+                  </div>
+                  <div key={4}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Bar4/>
                         </CardContent>
                     </Card>
+                  </div>
+                    <div key={5}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Bar5/>
                         </CardContent>
                     </Card>
+            </div>
                </QueueAnim>
             </div>
         );
