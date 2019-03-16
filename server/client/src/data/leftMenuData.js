@@ -18,28 +18,28 @@ const leftMenuData = [
         icon: "LibraryBooksIcon"
     },
     {
-        title: "Reports",
-        path: "/Reports",
+        title: "Charts",
+        path: "/Charts",
         icon: "BarChartIcon",
         subMenu: [
             {
-                title: "Reports1",
-                path: "/Reports/Reports1",
+                title: "Bar Charts",
+                path: "/Charts/BarCharts",
                 icon: "BarChartIcon"
             },
             {
-                title: "Reports2",
-                path: "/Reports/Reports2",
-                icon: "BarChartIcon"
+                title: "Pie Charts",
+                path: "/Charts/PieCharts",
+                icon: "PieChartIcon"
             },
             {
                 title: "Reports3",
-                path: "/Reports/Reports3",
+                path: "/Charts/Reports3",
                 icon: "BarChartIcon",
                 subMenu: [
                     {
                         title: "Reports4",
-                        path: "/Reports/Reports3/Reports4",
+                        path: "/Charts/Reports3/Reports4",
                         icon: "BarChartIcon"
                     }
                 ]

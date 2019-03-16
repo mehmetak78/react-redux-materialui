@@ -9,6 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Dashboard from '../pageComponents/Dashboard';
 import Orders from '../pageComponents/Orders';
 import Products from '../pageComponents/Products';
+import BarChartsPage from '../pageComponents/BarChartsPage';
 import PageNotFound from '../pageComponents/PageNotFound';
 
 import styles from "../styles/MiddlePageStyles";
@@ -21,9 +22,10 @@ class MiddlePage extends Component {
             <main className={classes.content}>
                 <Switch>
                     <Route exact path="/" component={Dashboard}/>
-                    <Route exact path="/dashboard" component={Dashboard}/>
-                    <Route exact path="/orders" component={Orders}/>
-                    <Route exact path="/products" component={Products}/>
+                    <Route exact path="/Dashboard" component={Dashboard}/>
+                    <Route exact path="/Orders" component={Orders}/>
+                    <Route exact path="/Products" component={Products}/>
+                    <Route exact path="/Charts/BarCharts" component={BarChartsPage}/>
                     <Route component={PageNotFound}/>
                 </Switch>
             </main>

@@ -42,6 +42,13 @@ export const initApp = () => dispatch =>
 {
     //const res = await axios.get("/api/current_user");
 
+    // Below Lines Are Temporary for coding purposes Just to pass Login Page.
+    console.log("DEBUG:Auto Authenticated while initializing application... actions.initApp()")
+    appInitTopMenu();
+    appInitLeftMenu();
+    dispatch({type: SET_LEFT_MENU, payload: leftMenuCollapsed});
+    dispatch({type: INIT_TOP_MENU, payload: topMenuState});
+    dispatch({type: LOGIN_USER, payload: ''});
 };
 
 

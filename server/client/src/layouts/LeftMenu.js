@@ -37,6 +37,7 @@ import DraftsIcon from "@material-ui/icons/Drafts";
 import PeopleIcon from "@material-ui/icons/People";
 import LayersIcon from "@material-ui/icons/Layers";
 import BarChartIcon from "@material-ui/icons/BarChart";
+import PieChartIcon from "@material-ui/icons/PieChart";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import {connect} from "react-redux";
@@ -51,6 +52,7 @@ const menuIcons = {
     "PeopleIcon": PeopleIcon,
     "LayersIcon": LayersIcon,
     "BarChartIcon": BarChartIcon,
+    "PieChartIcon": PieChartIcon,
     "ShoppingCartIcon": ShoppingCartIcon,
     "LibraryBooksIcon": LibraryBooksIcon
 };
