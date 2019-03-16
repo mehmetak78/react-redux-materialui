@@ -63,6 +63,26 @@ const leftMenuData = [
                 icon: "CandleStickChartIcon"
             },
             {
+                title: "Heat Map Charts",
+                path: "/Charts/HeatMapCharts",
+                icon: "HeatMapChartIcon"
+            },
+            {
+                title: "Pictorial Bar Charts",
+                path: "/Charts/PictorialBarCharts",
+                icon: "PictorialBarChartIcon"
+            },
+            {
+                title: "Sun Burst Bar Charts",
+                path: "/Charts/SunBurstCharts",
+                icon: "SunBurstChartIcon"
+            },
+            {
+                title: "Theme River Charts",
+                path: "/Charts/ThemeRiverCharts",
+                icon: "ThemeRiverChartIcon"
+            },
+            {
                 title: "Reports3",
                 path: "/Charts/Reports3",
                 icon: "BarChartIcon",
@@ -94,7 +114,14 @@ const leftMenuData = [
             {
                 title: "Drafts1",
                 path: "/Drafts/Drafts1",
-                icon: "DraftsIcon"
+                icon: "DraftsIcon",
+                subMenu: [
+                    {
+                        title: "Drafts2",
+                        path: "/Drafts/Drafts1/Drafts2",
+                        icon: "DraftsIcon"
+                    }
+                ]
             }
             ]
     }

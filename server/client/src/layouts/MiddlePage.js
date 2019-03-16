@@ -17,6 +17,10 @@ import RadarChartsPage from '../pageComponents/ChartsPages/RadarChartsPage';
 import FunnelChartsPage from '../pageComponents/ChartsPages/FunnelChartsPage';
 import GaugeChartsPage from '../pageComponents/ChartsPages/GaugeChartsPage';
 import CandleStickChartsPage from '../pageComponents/ChartsPages/CandleStickChartsPage';
+import HeatMapChartsPage from '../pageComponents/ChartsPages/HeatMapChartsPage';
+import PictorialBarChartsPage from '../pageComponents/ChartsPages/PictorialBarChartsPage';
+import SunBurstChartsPage from '../pageComponents/ChartsPages/SunBurstChartsPage';
+import ThemeRiverChartsPage from '../pageComponents/ChartsPages/ThemeRiverChartsPage';
 import PageNotFound from '../pageComponents/PageNotFound';
 
 import styles from "../styles/MiddlePageStyles";
@@ -40,6 +44,10 @@ class MiddlePage extends Component {
                     <Route exact path="/Charts/FunnelCharts" component={FunnelChartsPage}/>
                     <Route exact path="/Charts/GaugeCharts" component={GaugeChartsPage}/>
                     <Route exact path="/Charts/CandleStickCharts" component={CandleStickChartsPage}/>
+                    <Route exact path="/Charts/HeatMapCharts" component={HeatMapChartsPage}/>
+                    <Route exact path="/Charts/PictorialBarCharts" component={PictorialBarChartsPage}/>
+                    <Route exact path="/Charts/SunBurstCharts" component={SunBurstChartsPage}/>
+                    <Route exact path="/Charts/ThemeRiverCharts" component={ThemeRiverChartsPage}/>
                     <Route component={PageNotFound}/>
                 </Switch>
             </main>

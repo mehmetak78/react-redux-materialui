@@ -44,6 +44,10 @@ import RadarChartIcon from "@material-ui/icons/RssFeed";
 import FunnelChartIcon from "@material-ui/icons/SignalWifi2Bar";
 import GaugeChartIcon from "@material-ui/icons/PowerSettingsNew";
 import CandleStickChartIcon from "@material-ui/icons/Tune";
+import HeatMapChartIcon from "@material-ui/icons/Business";
+import PictorialBarChartIcon from "@material-ui/icons/SentimentSatisfied";
+import SunBurstChartIcon from "@material-ui/icons/Toll";
+import ThemeRiverChartIcon from "@material-ui/icons/Waves";
 
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
@@ -67,6 +71,10 @@ const menuIcons = {
     "FunnelChartIcon": FunnelChartIcon,
     "GaugeChartIcon": GaugeChartIcon,
     "CandleStickChartIcon": CandleStickChartIcon,
+    "HeatMapChartIcon": HeatMapChartIcon,
+    "PictorialBarChartIcon": PictorialBarChartIcon,
+    "SunBurstChartIcon": SunBurstChartIcon,
+    "ThemeRiverChartIcon": ThemeRiverChartIcon,
     "ShoppingCartIcon": ShoppingCartIcon,
     "LibraryBooksIcon": LibraryBooksIcon
 };
