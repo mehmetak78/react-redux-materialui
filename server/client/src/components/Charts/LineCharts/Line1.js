@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'echarts/theme/macarons';
-//import CHARTCONFIG from 'constants/chartConfig';
+
 import {CHARTCONFIG} from '../../../styles/ChartsPageStyles';
 
-let bar1 = {};
+let line1 = {};
 
-bar1.option = {
+line1.option = {
   tooltip: {
     trigger: 'axis'
   },
   legend: {
-    data: ['Evaporation', 'Precipitation'],
+    data: ['Highest temperature', 'Lowest temperature'],
     textStyle: {
       color: CHARTCONFIG.color.text
     }
@@ -26,8 +26,10 @@ bar1.option = {
   xAxis: [
     {
       type: 'category',
-      data: ['Jan.', 'Feb.', 'Mar.', 'Apr.', 'May', 'Jun.', 'Jul.', 'Aug.', 'Sep.', 'Oct.', 'Nov.', 'Dec.'],
+      boundaryGap: false,
+      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
       axisLabel: {
+        formatter: '{value} °C',
         textStyle: {
           color: CHARTCONFIG.color.text
         }
@@ -43,6 +45,7 @@ bar1.option = {
     {
       type: 'value',
       axisLabel: {
+        formatter: '{value} °C',
         textStyle: {
           color: CHARTCONFIG.color.text
         }
@@ -62,29 +65,28 @@ bar1.option = {
   ],
   series: [
     {
-      name: 'Evaporation',
-      type: 'bar',
-      data: [2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+      name: 'Highest temperature',
+      type: 'line',
+      data: [11, 11, 15, 13, 12, 13, 10],
       markPoint: {
         data: [
-                    {type: 'max', name: 'Max'},
-                    {type: 'min', name: 'Min'}
+          {type: 'max', name: 'Max'},
+          {type: 'min', name: 'Min'}
         ]
       },
       markLine: {
         data: [
-                    {type: 'average', name: 'Average'}
+          {type: 'average', name: 'Average'}
         ]
       }
     },
     {
-      name: 'Precipitation',
-      type: 'bar',
-      data: [2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+      name: 'Lowest temperature',
+      type: 'line',
+      data: [1, -2, 2, 5, 3, 2, 0],
       markPoint: {
         data: [
-          {name: 'Highest', value: 182.2, xAxis: 7, yAxis: 183, symbolSize: 18},
-          {name: 'Lowest', value: 2.3, xAxis: 11, yAxis: 3}
+                    {name: 'Lowest temperature', value: -2, xAxis: 1, yAxis: -1.5}
         ]
       },
       markLine: {
@@ -96,13 +98,13 @@ bar1.option = {
   ]
 };
 
-const Bar1 = () => (
+const Chart = () => (
   <div className="box box-default mb-4">
-    <div className="box-header">Basic Column</div>
+    <div className="box-header">Basic Line</div>
     <div className="box-body">
-      <ReactEcharts option={bar1.option} theme={"macarons"} />
+      <ReactEcharts option={line1.option} theme={"macarons"} />
     </div>
   </div>
 )
 
-export default Bar1;
+export default Chart;

@@ -1,5 +1,13 @@
 
-const CHARTCONFIG = {
+export const styles = theme => ({
+    appBarSpacer: theme.mixins.toolbar,
+    card: {
+        minWidth: 275,
+        marginTop: 20,
+    },
+});
+
+export const CHARTCONFIG = {
     color: {
         danger: "rgba(233,75,59,.85)",
         gray: "rgba(221,221,221,.3)",
@@ -16,5 +24,3 @@ const CHARTCONFIG = {
         warning: "rgba(255,202,40,.85)"
     }
 };
-
-export default CHARTCONFIG;

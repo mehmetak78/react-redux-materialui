@@ -23,6 +23,13 @@ class PageNotFound extends Component {
                     <div key="1">Page Not Found</div>
                     <div key="2">Page Not Found</div>
                     <div key="3">Page Not Found</div>
+                    <div key="4">Page Not Found</div>
+                    <div key="5">Page Not Found</div>
+                    <div key="6">Page Not Found</div>
+                    <div key="7">Page Not Found</div>
+                    <div key="8">Page Not Found</div>
+                    <div key="9">Page Not Found</div>
+                    <div key="10">Page Not Found</div>
                 </QueueAnim>
             </Fragment>
         );

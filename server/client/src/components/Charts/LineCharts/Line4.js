@@ -1,20 +1,16 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'echarts/theme/macarons';
-//import CHARTCONFIG from 'constants/chartConfig';
 import {CHARTCONFIG} from '../../../styles/ChartsPageStyles';
 
-let bar4 = {};
+let line4 = {};
 
-bar4.option = {
+line4.option = {
   tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    }
+    trigger: 'axis'
   },
   legend: {
-    data: ['Direct', 'Email', 'Affiliate', 'Video Ads', 'Search'],
+    data: ['Email', 'Affiliate', 'Video Ads', 'Direct', 'Search'],
     textStyle: {
       color: CHARTCONFIG.color.text
     }
@@ -28,7 +24,9 @@ bar4.option = {
   calculable: true,
   xAxis: [
     {
-      type: 'value',
+      type: 'category',
+      boundaryGap: false,
+      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -43,8 +41,7 @@ bar4.option = {
   ],
   yAxis: [
     {
-      type: 'category',
-      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
+      type: 'value',
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -65,50 +62,50 @@ bar4.option = {
   ],
   series: [
     {
-      name: 'Direct',
-      type: 'bar',
-      stack: 'Sum',
-      itemStyle: { normal: {label: {show: true, position: 'insideRight'}}},
-      data: [320, 302, 301, 334, 390, 330, 320]
-    },
-    {
       name: 'Email',
-      type: 'bar',
+      type: 'line',
       stack: 'Sum',
-      itemStyle: { normal: {label: {show: true, position: 'insideRight'}}},
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
       data: [120, 132, 101, 134, 90, 230, 210]
     },
     {
       name: 'Affiliate',
-      type: 'bar',
+      type: 'line',
       stack: 'Sum',
-      itemStyle: { normal: {label: {show: true, position: 'insideRight'}}},
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
       data: [220, 182, 191, 234, 290, 330, 310]
     },
     {
       name: 'Video Ads',
-      type: 'bar',
+      type: 'line',
       stack: 'Sum',
-      itemStyle: { normal: {label: {show: true, position: 'insideRight'}}},
-      data: [150, 212, 201, 154, 190, 330, 410]
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [150, 232, 201, 154, 190, 330, 410]
+    },
+    {
+      name: 'Direct',
+      type: 'line',
+      stack: 'Sum',
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [320, 332, 301, 334, 390, 330, 320]
     },
     {
       name: 'Search',
-      type: 'bar',
+      type: 'line',
       stack: 'Sum',
-      itemStyle: { normal: {label: {show: true, position: 'insideRight'}}},
-      data: [820, 832, 901, 934, 1290, 1330, 1320]
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [820, 932, 901, 934, 1290, 1330, 1320]
     }
   ]
 };
 
-const Bar4 = () => (
+const Chart = () => (
   <div className="box box-default mb-4">
-    <div className="box-header">Stacked Bar</div>
+    <div className="box-header">Basic Area</div>
     <div className="box-body">
-      <ReactEcharts option={bar4.option} theme={"macarons"} />
+      <ReactEcharts option={line4.option} theme={"macarons"} />
     </div>
   </div>
 )
 
-export default Bar4;
+export default Chart;

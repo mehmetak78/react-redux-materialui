@@ -1,20 +1,19 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'echarts/theme/macarons';
-//import CHARTCONFIG from 'constants/chartConfig';
 import {CHARTCONFIG} from '../../../styles/ChartsPageStyles';
 
-let bar5 = {};
+let line3 = {};
 
-bar5.option = {
+line3.option = {
+  title: {
+    text: 'Sales',
+  },
   tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'shadow'
-    }
+    trigger: 'axis'
   },
   legend: {
-    data: ['Profit', 'Cost', 'Income'],
+    data: ['Intention', 'Pre-order', 'Deal closed'],
     textStyle: {
       color: CHARTCONFIG.color.text
     }
@@ -28,7 +27,9 @@ bar5.option = {
   calculable: true,
   xAxis: [
     {
-      type: 'value',
+      type: 'category',
+      boundaryGap: false,
+      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -43,9 +44,7 @@ bar5.option = {
   ],
   yAxis: [
     {
-      type: 'category',
-      axisTick: {show: false},
-      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
+      type: 'value',
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -66,40 +65,36 @@ bar5.option = {
   ],
   series: [
     {
-      name: 'Profit',
-      type: 'bar',
-      itemStyle: { normal: {label: {show: true, position: 'inside'}}},
-      data: [200, 170, 240, 244, 200, 220, 210]
+      name: 'Deal closed',
+      type: 'line',
+      smooth: true,
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [10, 12, 21, 54, 260, 830, 710]
     },
     {
-      name: 'Income',
-      type: 'bar',
-      stack: 'Sum',
-      barWidth: 5,
-      itemStyle: {normal: {
-        label: {show: true}
-      }},
-      data: [320, 302, 341, 374, 390, 450, 420]
+      name: 'Pre-order',
+      type: 'line',
+      smooth: true,
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [30, 182, 434, 791, 390, 30, 10]
     },
     {
-      name: 'Cost',
-      type: 'bar',
-      stack: 'Sum',
-      itemStyle: {normal: {
-        label: {show: true, position: 'left'}
-      }},
-      data: [-120, -132, -101, -134, -190, -230, -210]
+      name: 'Intention',
+      type: 'line',
+      smooth: true,
+      itemStyle: {normal: {areaStyle: {type: 'default'}}},
+      data: [1320, 1132, 601, 234, 120, 90, 20]
     }
   ]
 };
 
-const Bar5 = () => (
+const Chart = () => (
   <div className="box box-default mb-4">
-    <div className="box-header">Tornado</div>
+    <div className="box-header">Basic Area</div>
     <div className="box-body">
-      <ReactEcharts option={bar5.option} theme={"macarons"} />
+      <ReactEcharts option={line3.option} theme={"macarons"} />
     </div>
   </div>
-);
+)
 
-export default Bar5;
+export default Chart;

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'echarts/theme/macarons';
 //import CHARTCONFIG from 'constants/chartConfig';
-import CHARTCONFIG from '../chartConfig';
+import {CHARTCONFIG} from '../../../styles/ChartsPageStyles';
 
 let bar3 = {};
 

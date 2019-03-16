@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import QueueAnim from 'rc-queue-anim';
-import Bar1 from '../components/Charts/BarCharts/Bar1'
-import Bar2 from '../components/Charts/BarCharts/Bar2';
-import Bar3 from '../components/Charts/BarCharts/Bar3';
-import Bar4 from '../components/Charts/BarCharts/Bar4';
-import Bar5 from '../components/Charts/BarCharts/Bar5';
+import Bar1 from '../../components/Charts/BarCharts/Bar1'
+import Bar2 from '../../components/Charts/BarCharts/Bar2';
+import Bar3 from '../../components/Charts/BarCharts/Bar3';
+import Bar4 from '../../components/Charts/BarCharts/Bar4';
+import Bar5 from '../../components/Charts/BarCharts/Bar5';
 
 import {Typography, Card, CardContent} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
-import styles from "../styles/BarChartsPageStyles";
+import {styles} from "../../styles/ChartsPageStyles";
 
 
 

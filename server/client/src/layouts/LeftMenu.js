@@ -36,10 +36,18 @@ import DashboardIcon from "@material-ui/icons/Dashboard";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import PeopleIcon from "@material-ui/icons/People";
 import LayersIcon from "@material-ui/icons/Layers";
+import LineChartIcon from "@material-ui/icons/Timeline";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import PieChartIcon from "@material-ui/icons/PieChart";
+import ScatterChartIcon from "@material-ui/icons/ScatterPlot";
+import RadarChartIcon from "@material-ui/icons/RssFeed";
+import FunnelChartIcon from "@material-ui/icons/SignalWifi2Bar";
+import GaugeChartIcon from "@material-ui/icons/PowerSettingsNew";
+import CandleStickChartIcon from "@material-ui/icons/Tune";
+
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
+
 import {connect} from "react-redux";
 import {setLeftMenu} from "../redux/actions/actions.js";
 
@@ -51,8 +59,14 @@ const menuIcons = {
     "DraftsIcon": DraftsIcon,
     "PeopleIcon": PeopleIcon,
     "LayersIcon": LayersIcon,
+    "LineChartIcon": LineChartIcon,
     "BarChartIcon": BarChartIcon,
     "PieChartIcon": PieChartIcon,
+    "ScatterChartIcon": ScatterChartIcon,
+    "RadarChartIcon": RadarChartIcon,
+    "FunnelChartIcon": FunnelChartIcon,
+    "GaugeChartIcon": GaugeChartIcon,
+    "CandleStickChartIcon": CandleStickChartIcon,
     "ShoppingCartIcon": ShoppingCartIcon,
     "LibraryBooksIcon": LibraryBooksIcon
 };

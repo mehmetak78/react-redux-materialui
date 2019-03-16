@@ -23,6 +23,11 @@ const leftMenuData = [
         icon: "BarChartIcon",
         subMenu: [
             {
+                title: "Line Charts",
+                path: "/Charts/LineCharts",
+                icon: "LineChartIcon"
+            },
+            {
                 title: "Bar Charts",
                 path: "/Charts/BarCharts",
                 icon: "BarChartIcon"
@@ -31,6 +36,31 @@ const leftMenuData = [
                 title: "Pie Charts",
                 path: "/Charts/PieCharts",
                 icon: "PieChartIcon"
+            },
+            {
+                title: "Scatter Charts",
+                path: "/Charts/ScatterCharts",
+                icon: "ScatterChartIcon"
+            },
+            {
+                title: "Radar Charts",
+                path: "/Charts/RadarCharts",
+                icon: "RadarChartIcon"
+            },
+            {
+                title: "Funnel Charts",
+                path: "/Charts/FunnelCharts",
+                icon: "FunnelChartIcon"
+            },
+            {
+                title: "Gauge Charts",
+                path: "/Charts/GaugeCharts",
+                icon: "GaugeChartIcon"
+            },
+            {
+                title: "CandleStick Charts",
+                path: "/Charts/CandleStickCharts",
+                icon: "CandleStickChartIcon"
             },
             {
                 title: "Reports3",

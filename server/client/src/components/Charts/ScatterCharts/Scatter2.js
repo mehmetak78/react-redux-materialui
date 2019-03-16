@@ -1,20 +1,41 @@
 import React from 'react';
 import ReactEcharts from 'echarts-for-react';
 import 'echarts/theme/macarons';
-//import CHARTCONFIG from 'constants/chartConfig';
 import {CHARTCONFIG} from '../../../styles/ChartsPageStyles';
 
-let bar5 = {};
+let scatter2 = {};
 
-bar5.option = {
+function random() {
+  const r = Math.round(Math.random() * 100);
+  return (r * (r % 2 === 0 ? 1 : -1));
+}
+function randomDataArray() {
+  const d = [];
+  let len = 100;
+  while (len--) {
+    d.push([
+      random(),
+      random(),
+      Math.abs(random()),
+    ]);
+  }
+  return d;
+}
+scatter2.option = {
   tooltip: {
     trigger: 'axis',
+    showDelay: 0,
     axisPointer: {
-      type: 'shadow'
+      show: true,
+      type: 'cross',
+      lineStyle: {
+        type: 'dashed',
+        width: 1
+      }
     }
   },
   legend: {
-    data: ['Profit', 'Cost', 'Income'],
+    data: ['A', 'B'],
     textStyle: {
       color: CHARTCONFIG.color.text
     }
@@ -25,10 +46,11 @@ bar5.option = {
       saveAsImage: {show: true, title: 'save'}
     }
   },
-  calculable: true,
   xAxis: [
     {
       type: 'value',
+      splitNumber: 4,
+      scale: true,
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -38,14 +60,17 @@ bar5.option = {
         lineStyle: {
           color: CHARTCONFIG.color.splitLine
         }
+      },
+      splitArea: {
+        show: false
       }
     }
   ],
   yAxis: [
     {
-      type: 'category',
-      axisTick: {show: false},
-      data: ['Mon.', 'Tue.', 'Wed.', 'Thu.', 'Fri.', 'Sat.', 'Sun.'],
+      type: 'value',
+      splitNumber: 4,
+      scale: true,
       axisLabel: {
         textStyle: {
           color: CHARTCONFIG.color.text
@@ -66,40 +91,31 @@ bar5.option = {
   ],
   series: [
     {
-      name: 'Profit',
-      type: 'bar',
-      itemStyle: { normal: {label: {show: true, position: 'inside'}}},
-      data: [200, 170, 240, 244, 200, 220, 210]
+      name: 'A',
+      type: 'scatter',
+      symbolSize(value) {
+        return Math.round(value[2] / 5);
+      },
+      data: randomDataArray()
     },
     {
-      name: 'Income',
-      type: 'bar',
-      stack: 'Sum',
-      barWidth: 5,
-      itemStyle: {normal: {
-        label: {show: true}
-      }},
-      data: [320, 302, 341, 374, 390, 450, 420]
-    },
-    {
-      name: 'Cost',
-      type: 'bar',
-      stack: 'Sum',
-      itemStyle: {normal: {
-        label: {show: true, position: 'left'}
-      }},
-      data: [-120, -132, -101, -134, -190, -230, -210]
+      name: 'B',
+      type: 'scatter',
+      symbolSize(value) {
+        return Math.round(value[2] / 5);
+      },
+      data: randomDataArray()
     }
   ]
 };
 
-const Bar5 = () => (
+const Chart = () => (
   <div className="box box-default mb-4">
-    <div className="box-header">Tornado</div>
+    <div className="box-header">Basic Bubble</div>
     <div className="box-body">
-      <ReactEcharts option={bar5.option} theme={"macarons"} />
+      <ReactEcharts option={scatter2.option} theme={"macarons"} style={{height: '400px'}} />
     </div>
   </div>
-);
+)
 
-export default Bar5;
+export default Chart;
