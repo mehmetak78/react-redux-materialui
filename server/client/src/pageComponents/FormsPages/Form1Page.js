@@ -20,6 +20,7 @@ class Form1Page extends React.Component {
         console.log(values);
     };
     render() {
+        console.log("Form1Page.render()");
         const {classes} = this.props;
         return (
             <div>

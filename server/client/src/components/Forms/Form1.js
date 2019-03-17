@@ -3,8 +3,9 @@ import React, {Component} from 'react';
 import {reduxForm } from 'redux-form'
 import {validateForm, warnForm} from "./formControlHelper";
 
-import {formFieldsGroup1} from "../../data/FormsData/Form1Data";
+import {formFieldsGroup1, formType} from "../../data/FormsData/Form1Data";
 import FormFields from "./FormFields"
+
 
 import {Typography, Button, Grid} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
@@ -31,15 +32,16 @@ class Form1 extends Component {
     };
 
     render() {
-        const {handleSubmit, pristine, reset, submitting} = this.props;
+        const {pristine, reset, submitting, initialize} = this.props;
         const {classes} = this.props;
+        console.log("Form1.render()");
         return (
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
                     <Typography variant="h6" >
                         First Group
                     </Typography>
-                    <FormFields  formFields={formFieldsGroup1} />
+                    <FormFields  formFields={formFieldsGroup1} formType={formType}  initialize={initialize}/>
 
                     <Grid container className={classes.buttons}>
                         <Grid item>
@@ -55,7 +57,6 @@ class Form1 extends Component {
                             </Button>
                         </Grid>
                     </Grid>
-
                 </form>
             </React.Fragment>
         );

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {reduxForm } from 'redux-form'
 import {validateForm, warnForm} from "./formControlHelper";
 
-import {formFieldsGroup1, formFieldsGroup2} from "../../data/FormsData/Form2Data";
+import {formFieldsGroup1, formFieldsGroup2, formType} from "../../data/FormsData/Form2Data";
 import FormFields from "./FormFields"
 
 import {Typography, Card, CardContent, Button, Grid} from '@material-ui/core';
@@ -31,7 +31,7 @@ class Form2 extends Component {
         reset();
     };
     render() {
-        const {handleSubmit, pristine, reset, submitting} = this.props;
+        const {pristine, reset, submitting, initialize} = this.props;
         const {classes} = this.props;
         return (
             <React.Fragment>
@@ -41,7 +41,7 @@ class Form2 extends Component {
                             <Typography variant="h6" >
                                 First Group
                             </Typography>
-                            <FormFields  formFields={formFieldsGroup1} />
+                            <FormFields  formFields={formFieldsGroup1} formType={formType} initialize={initialize}/>
                         </CardContent>
                     </Card>
                     <Card className={classes.card}>
@@ -49,7 +49,7 @@ class Form2 extends Component {
                             <Typography variant="h6" >
                                 Second Group
                             </Typography>
-                            <FormFields  formFields={formFieldsGroup2} />
+                            <FormFields  formFields={formFieldsGroup2} formType={formType} initialize={initialize}/>
                         </CardContent>
                     </Card>
 

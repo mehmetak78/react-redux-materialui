@@ -1,3 +1,8 @@
+
+export const formType = {
+    variant: "outlined"               // standard, outlined, filled
+};
+
 export const formFieldsGroup1 = [
     {
         name: "firstName",

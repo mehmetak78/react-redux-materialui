@@ -1,3 +1,8 @@
+
+export const formType = {
+    variant: "standard"               // standard, outlined, filled
+};
+
 export const formFieldsGroup1 = [
     {
         name: "firstName",
@@ -5,7 +10,12 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "firstName",
+        value:"Mehmet",
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        adornment: {
+            text:"kg",
+            position:"end"
+        },
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -24,6 +34,10 @@ export const formFieldsGroup1 = [
         renderType: "TextField",
         autoComplete: "lastName",
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        adornment: {
+            text:"$",
+            position:"start"
+        },
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -143,17 +157,14 @@ export const formFieldsGroup1 = [
             maxLength: 15
         }
     },
+    {
+        name: "addressCheck",
+        label: "Default Address",
+        type: "checkbox",
+        renderType: "CheckBox",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        value:true
+    },
 
 
 ];
-
-/*
-
-
-                        <Grid item xs={12}>
-                            <FormControlLabel
-                                control={<Checkbox color="secondary" name="saveAddress" value="yes"/>}
-                                label="Use this address for payment details"
-                            />
-                        </Grid>
- */
