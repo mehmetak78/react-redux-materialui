@@ -2,8 +2,8 @@ import {OPEN_LOGIN_PAGE,CLOSE_LOGIN_PAGE,LOGIN_USER, LOGOUT_USER} from "./action
 import {TOGGLE_DRAWER, TOGGLE_THEME} from "./actionTypes";
 import {INIT_TOP_MENU, SET_BADGET_CONTENT, OPEN_MENU, CLOSE_MENU, SET_SHOW_SUBMENU_ITEMSICONS} from "./actionTypes";
 import {SET_LEFT_MENU} from "./actionTypes";
-import leftMenuData from "../../data/leftMenuData";
-import topMenuData from "../../data/topMenuData";
+import leftMenuData from "../../data/LeftMenuData";
+import topMenuData from "../../data/TopMenuData";
 
 
 let leftMenuCollapsed = {};

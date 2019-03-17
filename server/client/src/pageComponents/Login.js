@@ -2,26 +2,37 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Avatar from '@material-ui/core/Avatar';
+
 import Button from '@material-ui/core/Button';
-import {IconButton} from '@material-ui/core';
+
 import CssBaseline from '@material-ui/core/CssBaseline';
 import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import withStyles from '@material-ui/core/styles/withStyles';
 import {connect} from "react-redux";
 import {loginUser,closeLoginPage} from "../redux/actions/actions";
 
+
+import Fab from '@material-ui/core/Fab';
+
 import styles from "../styles/LoginStyles"
 
-class SignIn extends Component {
+const socialLogins = [
+    {className:"twitter", iconName:"fab fa-twitter fa-2x", title: "Connect With Twitter"},
+    {className:"facebook", iconName:"fab fa-facebook-f fa-2x", title: "Connect With Facebook"},
+    {className:"google", iconName:"fab fa-google-plus-g fa-2x", title: "Connect With Google+"},
+    {className:"linkedin", iconName:"fab fa-linkedin fa-2x", title: "Connect With Linkedin"},
+ //   {className:"youtube", iconName:"fab fa-youtube-square fa-2x", title: "Connect With Youtube"},
+ //   {className:"github", iconName:"fab fa-github fa-2x", title: "Connect With Github"},
+];
 
+class SignIn extends Component {
 
     render() {
         const { classes } = this.props;
@@ -32,23 +43,22 @@ class SignIn extends Component {
             <main className={classes.main}>
                 <CssBaseline/>
                 <Paper className={classes.paper}>
-                    <Avatar className={classes.avatar}>
-                        <LockOutlinedIcon />
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
+
+                    <br/>
+                    <Typography  variant="h4">
                         Sign in
                     </Typography>
+                    <br/>
+                    <br/>
 
-                    <div className={classes.socialLine}>
-                        <IconButton color="primary" >
-                            <i className={"fab fa-facebook-f"} />
-                        </IconButton>
-                        <IconButton color="primary" >
-                            <i className={"fab fa-twitter "} />
-                        </IconButton>
-                        <IconButton color="primary" >
-                            <i className={"fab fa-google"} />
-                        </IconButton>
+
+                    <div>
+                        {socialLogins.map((social) => (
+                                <Fab aria-label={social.title} className={classes[social.className]}>
+                                    <i className={social.iconName}/>
+                                </Fab>
+                            )
+                        )}
                     </div>
 
                     <form className={classes.form} onSubmit={loginUser}>

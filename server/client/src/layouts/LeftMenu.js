@@ -28,14 +28,14 @@ import ExpandMore from '@material-ui/icons/ExpandMore';
 
 import { NavLink } from "react-router-dom";
 
-import leftMenuData from "../data/leftMenuData";
+import leftMenuData from "../data/LeftMenuData";
 import classNames from "classnames";
 
 
 import DashboardIcon from "@material-ui/icons/Dashboard";
 import DraftsIcon from "@material-ui/icons/Drafts";
 import PeopleIcon from "@material-ui/icons/People";
-import LayersIcon from "@material-ui/icons/Layers";
+import FormsIcon from "@material-ui/icons/Layers";
 import LineChartIcon from "@material-ui/icons/Timeline";
 import BarChartIcon from "@material-ui/icons/BarChart";
 import PieChartIcon from "@material-ui/icons/PieChart";
@@ -48,6 +48,7 @@ import HeatMapChartIcon from "@material-ui/icons/Business";
 import PictorialBarChartIcon from "@material-ui/icons/SentimentSatisfied";
 import SunBurstChartIcon from "@material-ui/icons/Toll";
 import ThemeRiverChartIcon from "@material-ui/icons/Waves";
+
 
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
@@ -62,7 +63,7 @@ const menuIcons = {
     "DashboardIcon": DashboardIcon,
     "DraftsIcon": DraftsIcon,
     "PeopleIcon": PeopleIcon,
-    "LayersIcon": LayersIcon,
+    "FormsIcon": FormsIcon,
     "LineChartIcon": LineChartIcon,
     "BarChartIcon": BarChartIcon,
     "PieChartIcon": PieChartIcon,

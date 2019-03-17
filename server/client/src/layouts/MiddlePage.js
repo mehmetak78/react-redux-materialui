@@ -21,9 +21,13 @@ import HeatMapChartsPage from '../pageComponents/ChartsPages/HeatMapChartsPage';
 import PictorialBarChartsPage from '../pageComponents/ChartsPages/PictorialBarChartsPage';
 import SunBurstChartsPage from '../pageComponents/ChartsPages/SunBurstChartsPage';
 import ThemeRiverChartsPage from '../pageComponents/ChartsPages/ThemeRiverChartsPage';
+import Form1Page from "../pageComponents/FormsPages/Form1Page";
+import Form2Page from "../pageComponents/FormsPages/Form2Page";
+import AddressFormPage from "../pageComponents/FormsPages/AddressFormPage";
 import PageNotFound from '../pageComponents/PageNotFound';
 
 import styles from "../styles/MiddlePageStyles";
+
 
 class MiddlePage extends Component {
     render() {
@@ -48,6 +52,9 @@ class MiddlePage extends Component {
                     <Route exact path="/Charts/PictorialBarCharts" component={PictorialBarChartsPage}/>
                     <Route exact path="/Charts/SunBurstCharts" component={SunBurstChartsPage}/>
                     <Route exact path="/Charts/ThemeRiverCharts" component={ThemeRiverChartsPage}/>
+                    <Route exact path="/FormPages/Form1" component={Form1Page}/>
+                    <Route exact path="/FormPages/Form2" component={Form2Page}/>
+                    <Route exact path="/FormPages/AddressFormPage" component={AddressFormPage}/>
                     <Route component={PageNotFound}/>
                 </Switch>
             </main>

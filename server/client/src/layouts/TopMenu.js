@@ -35,7 +35,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import FaceIcon from '@material-ui/icons/Face';
 import DoneIcon from '@material-ui/icons/Done';
 
-import topMenuData from "../data/topMenuData";
+import topMenuData from "../data/TopMenuData";
 
 import {setBagetContent, openMenu, closeMenu, setShowSubmenuItemsIcons} from "../redux/actions/actions.js";
 

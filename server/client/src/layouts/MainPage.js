@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-// @material-ui/core components
+
 import withStyles from "@material-ui/core/styles/withStyles";
 
 
@@ -14,12 +14,13 @@ import MiddlePage from "./MiddlePage"
 
 import Landing from '../pageComponents/Landing';
 import Login from '../pageComponents/Login';
-//import Login from '../MaterialDashboard/Login';
+
+
 
 import {openLoginPage, closeLoginPage, loginUser,logoutUser,toggleDrawer, toggleTheme} from "../redux/actions/actions.js";
 
 import styles from "../styles/MainPageStyles.js";
-//import pagesStyle from "../assets/jss/material-dashboard-pro-react/layouts/pagesStyle.jsx";
+
 
 
 class MainPage extends Component {

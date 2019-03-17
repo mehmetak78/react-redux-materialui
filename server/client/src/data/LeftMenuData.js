@@ -82,24 +82,24 @@ const leftMenuData = [
                 path: "/Charts/ThemeRiverCharts",
                 icon: "ThemeRiverChartIcon"
             },
-            {
-                title: "Reports3",
-                path: "/Charts/Reports3",
-                icon: "BarChartIcon",
-                subMenu: [
-                    {
-                        title: "Reports4",
-                        path: "/Charts/Reports3/Reports4",
-                        icon: "BarChartIcon"
-                    }
-                ]
-            }
         ]
     },
     {
-        title: "Integrations",
-        path: "/Integrations",
-        icon: "LayersIcon"
+        title: "Form Pages",
+        path: "/FormPages",
+        icon: "FormsIcon",
+        subMenu: [
+            {
+                title: "Form 1",
+                path: "/FormPages/Form1",
+                icon: "FormsIcon"
+            },
+            {
+                title: "Form 2",
+                path: "/FormPages/Form2",
+                icon: "FormsIcon"
+            }
+        ]
     },
     {
         title: "Customers",
