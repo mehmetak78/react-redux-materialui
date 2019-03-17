@@ -24,14 +24,10 @@ const warn = (values) => {
 class Form1 extends Component {
 
     handleSubmit = (e, values) =>  {
-        console.log("Handle Submit");
-        const {handleSubmit, reset} = this.props;
-
-        handleSubmit(values);
-
         e.preventDefault();
+        const {handleSubmit, reset} = this.props;
+        handleSubmit(values);
         reset();
-
     };
 
     render() {
