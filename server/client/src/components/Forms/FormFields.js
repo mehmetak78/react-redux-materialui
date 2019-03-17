@@ -29,7 +29,7 @@ const renderTextField = (
 const renderField = (item, index) => {
     switch (item.renderType) {
         case "TextField":
-            return <Grid key={index} item xs={item.size.xs} sm={item.size.sm} md={item.size.md} lg={item.size.sm} xl={item.size.xl}>
+            return <Grid key={index} item xs={item.size.xs} sm={item.size.sm} md={item.size.md} lg={item.size.lg} xl={item.size.xl}>
                         <Field name={item.name} label={item.label} required={item.validations.emptyCheck}
                             autoComplete={item.autoComplete} type={item.type} component={renderTextField}
                         />

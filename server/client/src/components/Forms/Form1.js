@@ -6,7 +6,7 @@ import {validateForm, warnForm} from "./formControlHelper";
 import {formFieldsGroup1} from "../../data/FormsData/Form1Data";
 import FormFields from "./FormFields"
 
-import {Typography, Button} from '@material-ui/core';
+import {Typography, Button, Grid} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
 
@@ -40,17 +40,22 @@ class Form1 extends Component {
                         First Group
                     </Typography>
                     <FormFields  formFields={formFieldsGroup1} />
-                    <div>
-                        <Button variant="contained" color="primary" className={classes.button}
 
-                                type="submit" disabled={pristine || submitting}>
-                            Submit
-                        </Button>
-                        <Button variant="contained" color="secondary" className={classes.button}
-                                type="button" disabled={pristine || submitting} onClick={reset}>
-                            Clear Values
-                        </Button>
-                    </div>
+                    <Grid container className={classes.buttons}>
+                        <Grid item>
+                            <Button variant="contained" color="primary" className={classes.button}
+                                    type="submit" disabled={pristine || submitting}>
+                                Submit
+                            </Button>
+                        </Grid>
+                        <Grid item>
+                            <Button variant="contained" color="secondary" className={classes.button}
+                                    type="button" disabled={pristine || submitting} onClick={reset}>
+                                Clear Values
+                            </Button>
+                        </Grid>
+                    </Grid>
+
                 </form>
             </React.Fragment>
         );

@@ -6,7 +6,8 @@ import {validateForm, warnForm} from "./formControlHelper";
 import {formFieldsGroup1, formFieldsGroup2} from "../../data/FormsData/Form2Data";
 import FormFields from "./FormFields"
 
-import {Typography, Card, CardContent} from '@material-ui/core';
+import {Typography, Card, CardContent, Button, Grid} from '@material-ui/core';
+
 
 import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
@@ -23,12 +24,18 @@ const warn = (values) => {
 };
 
 class Form2 extends Component {
+    handleSubmit = (e, values) =>  {
+        e.preventDefault();
+        const {handleSubmit, reset} = this.props;
+        handleSubmit(values);
+        reset();
+    };
     render() {
-        const {handleSubmit} = this.props;
+        const {handleSubmit, pristine, reset, submitting} = this.props;
         const {classes} = this.props;
         return (
             <React.Fragment>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <Card className={classes.card}>
                         <CardContent>
                             <Typography variant="h6" >
@@ -45,6 +52,21 @@ class Form2 extends Component {
                             <FormFields  formFields={formFieldsGroup2} />
                         </CardContent>
                     </Card>
+
+                    <Grid container className={classes.buttons}>
+                        <Grid item>
+                            <Button variant="contained" color="primary" className={classes.button}
+                                    type="submit" disabled={pristine || submitting}>
+                                Submit
+                            </Button>
+                        </Grid>
+                        <Grid item>
+                            <Button variant="contained" color="secondary" className={classes.button}
+                                    type="button" disabled={pristine || submitting} onClick={reset}>
+                                Clear Values
+                            </Button>
+                        </Grid>
+                    </Grid>
 
                 </form>
             </React.Fragment>

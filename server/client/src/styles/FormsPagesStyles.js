@@ -8,6 +8,11 @@ const styles = theme => ({
     button: {
         margin: theme.spacing.unit,
     },
+    buttons: {
+        marginTop: theme.spacing.unit * 4,
+        justifyItems:"center",
+        justifyContent:"center"
+    }
 });
 
 export default styles;

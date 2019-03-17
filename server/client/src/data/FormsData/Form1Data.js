@@ -5,7 +5,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "firstName",
-        size: {xs:12,sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -23,7 +23,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "lastName",
-        size: {xs:12,sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -41,7 +41,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "address-line1",
-        size: {xs:12},
+        size: {xs:12,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -59,7 +59,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "address-line2",
-        size: {xs:12},
+        size: {xs:12,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: false,
             minLength: 3,
@@ -77,7 +77,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "City",
-        size: {xs:12, sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -95,7 +95,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "state",
-        size: {xs:12, sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: false,
             minLength: 3,
@@ -113,7 +113,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "zip",
-        size: {xs:12, sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -131,7 +131,7 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "country",
-        size: {xs:12, sm:6},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
