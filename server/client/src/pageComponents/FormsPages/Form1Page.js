@@ -15,7 +15,8 @@ import styles from "../../styles/FormsPagesStyles";
 
 
 class Form1Page extends React.Component {
-    handleSubmit = values => {
+    handleSubmit = (values) => {
+        console.log("handle submit");
         console.log(values);
     };
     render() {

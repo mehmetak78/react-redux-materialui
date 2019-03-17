@@ -22,18 +22,31 @@ const warn = (values) => {
 };
 
 class Form1 extends Component {
+
+    handleSubmit = (e, values) =>  {
+        console.log("Handle Submit");
+        const {handleSubmit, reset} = this.props;
+
+        handleSubmit(values);
+
+        e.preventDefault();
+        reset();
+
+    };
+
     render() {
         const {handleSubmit, pristine, reset, submitting} = this.props;
         const {classes} = this.props;
         return (
             <React.Fragment>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={this.handleSubmit}>
                     <Typography variant="h6" >
                         First Group
                     </Typography>
                     <FormFields  formFields={formFieldsGroup1} />
                     <div>
                         <Button variant="contained" color="primary" className={classes.button}
+
                                 type="submit" disabled={pristine || submitting}>
                             Submit
                         </Button>
