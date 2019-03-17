@@ -30,9 +30,7 @@ class Form1Page extends React.Component {
                     <CardContent>
                         <Form1 onSubmit={this.handleSubmit} />
                     </CardContent>
-
                 </Card>
-
             </div>
         )
     }

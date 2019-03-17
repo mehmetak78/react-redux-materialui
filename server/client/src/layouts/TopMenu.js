@@ -188,13 +188,13 @@ class TopMenu extends React.Component {
         const {  anchorEl, isMobileMenuOpen } = this.state;
         const {badgetContent} = this.props.topMenu;
 
-        //const isMobileMenuOpen = Boolean(mobileMenuOpen);
+        const isMobileMenuOpenBool = Boolean(isMobileMenuOpen);
         return (
             <Menu
                 anchorEl={anchorEl}
                 anchorOrigin={{vertical: 'top', horizontal: 'right'}}
                 transformOrigin={{vertical: 'top', horizontal: 'right'}}
-                open={isMobileMenuOpen}
+                open={isMobileMenuOpenBool}
                 onClose={this.handleCloseMenu}
             >
 

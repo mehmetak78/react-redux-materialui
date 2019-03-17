@@ -6,7 +6,7 @@ import {validateForm, warnForm} from "./formControlHelper";
 import {formFieldsGroup1} from "../../data/FormsData/Form1Data";
 import FormFields from "./FormFields"
 
-import {Typography} from '@material-ui/core';
+import {Typography, Button} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
 
@@ -23,7 +23,8 @@ const warn = (values) => {
 
 class Form1 extends Component {
     render() {
-        const {handleSubmit} = this.props;
+        const {handleSubmit, pristine, reset, submitting} = this.props;
+        const {classes} = this.props;
         return (
             <React.Fragment>
                 <form onSubmit={handleSubmit}>
@@ -31,6 +32,16 @@ class Form1 extends Component {
                         First Group
                     </Typography>
                     <FormFields  formFields={formFieldsGroup1} />
+                    <div>
+                        <Button variant="contained" color="primary" className={classes.button}
+                                type="submit" disabled={pristine || submitting}>
+                            Submit
+                        </Button>
+                        <Button variant="contained" color="secondary" className={classes.button}
+                                type="button" disabled={pristine || submitting} onClick={reset}>
+                            Clear Values
+                        </Button>
+                    </div>
                 </form>
             </React.Fragment>
         );
