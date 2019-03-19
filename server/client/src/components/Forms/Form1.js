@@ -34,7 +34,6 @@ class Form1 extends Component {
     render() {
         const {pristine, reset, submitting, initialize} = this.props;
         const {classes} = this.props;
-        console.log("Form1.render()");
         return (
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>

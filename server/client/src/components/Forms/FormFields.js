@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
+
 import Grid from '@material-ui/core/Grid';
 
-import {TextField, InputAdornment, FormControlLabel, Checkbox} from '@material-ui/core';
+import {TextField, InputAdornment, FormControlLabel, Checkbox,
+    FormControl, InputLabel, Select, MenuItem, OutlinedInput,
+    Input} from '@material-ui/core';
 
 import {Field} from 'redux-form'
 
@@ -20,7 +23,6 @@ class FormFields extends Component {
         });
 
         this.props.initialize(initValues);
-        console.log("initialize");
     };
 
 
@@ -53,29 +55,25 @@ class FormFields extends Component {
 
         return (
             <div>
-                <div>
-                    <TextField
-                        required={required}
-                        fullWidth
-                        {...input}
-                        type={input.type}
-                        label={item.label}
-                        autoComplete={item.autoComplete}
-                        error={errorBoolean}
-                        helperText={touched && (error || warning)}
-                        variant={variant}
-                        InputProps={inputProps}
-                    />
-                </div>
+                <TextField
+                    required={required}
+                    fullWidth
+                    {...input}
+                    type={input.type}
+                    label={item.label}
+                    autoComplete={item.autoComplete}
+                    error={errorBoolean}
+                    helperText={touched && (error || warning)}
+                    variant={variant}
+                    InputProps={inputProps}
+                />
             </div>
         )
     };
 
-    renderCheckBox = ({input, label, checked}) => {
+    renderCheckBox = ({item,input}) => {
 
-        console.log(input);
-
-        checked = Boolean(input.value);
+        let checked = Boolean(input.value);
         const tmpInput = {...input, value: input.value.toString()};
 
         return (
@@ -88,38 +86,65 @@ class FormFields extends Component {
                             {...tmpInput}
                         />
                     }
-                    label={label}
+                    label={item.label}
                 />
             </div>
         )
     };
-    renderField = (item, index) => {
-        switch (item.renderType) {
-            case "TextField":
-                return (
-                    <Grid item key={index} xs={item.size.xs} sm={item.size.sm} md={item.size.md} lg={item.size.lg}
-                          xl={item.size.xl}>
-                        <Field name={item.name} item={item}
-                               component={this.renderTextField}
-                        />
-                    </Grid>);
-            case "CheckBox":
-                return (
-                    <Grid item key={index} xs={item.size.xs} sm={item.size.sm} md={item.size.md} lg={item.size.lg}
-                          xl={item.size.xl}>
-                        <Field name={item.name} label={item.label} checked={item.checked}
-                               component={this.renderCheckBox}
-                        />
-                    </Grid>);
-            default:
-                return "";
+
+
+    renderSelect = ({item, input}) => {
+
+        const MULTIPLER = 9;
+        const {formType} = this.props;
+        let variant = 'standard';
+        if (formType && formType.variant) {
+            variant = formType.variant
         }
 
+        const tmpInput = {...input, labelWidth:item.label.length*MULTIPLER};
+        return (
+
+                <FormControl variant={variant} fullWidth>
+                    <InputLabel htmlFor={item.id}>{item.label}</InputLabel>
+                    <Select
+                            input={variant==='outlined' ? <OutlinedInput{...tmpInput}/> :<Input{...input}/>
+                            }>
+                        {item.options.map( (option, index) => (
+                            <MenuItem key={index} value={option.value}>{option.title}</MenuItem>
+                        ))}
+
+                    </Select>
+
+                </FormControl>
+
+        )
+    };
+
+    renderField = (item, index) => {
+        let renderComponent;
+        switch (item.renderType) {
+            case "TextField": renderComponent = this.renderTextField; break;
+            case "CheckBox": renderComponent = this.renderCheckBox; break;
+            case "Select": renderComponent = this.renderSelect; break;
+            default: renderComponent = null;
+        }
+
+        return (
+            <Grid item key={index} xs={item.size.xs} sm={item.size.sm} md={item.size.md} lg={item.size.lg}
+                  xl={item.size.xl}>
+                <Field name={item.name} item={item}
+                       component={renderComponent}
+                />
+            </Grid>
+        )
     };
 
     render() {
         const {formFields} = this.props;
-        console.log("FormFields.render()");
+        const title = "Age";
+        let labelWidth =  0;
+
         return (
             <Grid container spacing={24}>
                 {formFields.map((item, index) => (

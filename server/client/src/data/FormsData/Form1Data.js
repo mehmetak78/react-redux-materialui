@@ -165,6 +165,21 @@ export const formFieldsGroup1 = [
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
         value:true
     },
+    {
+        name: "ageSelect",
+        label: "Age",
+        type: "select",
+        renderType: "Select",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        options: [
+            {title:'None',value:""},
+            {title:'Ten',value:10},
+            {title:'Twelve',value:20},
+            {title:'Thirty',value:30},
+            {title:'Fourthy',value:40},
+        ],
+
+    },
 
 
 ];

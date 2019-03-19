@@ -188,18 +188,21 @@ export const formFieldsGroup2 = [
             minLength: 5,
             maxLength: 15
         }
-    }
+    },
+    {
+        name: "ageSelect",
+        label: "A",
+        type: "select",
+        renderType: "Select",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        options: [
+            {title:'None',value:""},
+            {title:'Ten',value:10},
+            {title:'Twelve',value:20},
+            {title:'Thirty',value:30},
+        ],
+
+    },
 ];
 
 
-
-/*
-
-
-                        <Grid item xs={12}>
-                            <FormControlLabel
-                                control={<Checkbox color="secondary" name="saveAddress" value="yes"/>}
-                                label="Use this address for payment details"
-                            />
-                        </Grid>
- */
