@@ -10,7 +10,7 @@ class PageNotFound extends Component {
     state = {};
 
     render() {
-        console.log("PageNoteFound.render");
+
         const {classes} = this.props;
         return (
             <Fragment>
