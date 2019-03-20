@@ -53,7 +53,11 @@ class MainPage extends Component {
 
             default : return createMuiTheme({
                 typography: {
-                    useNextVariants: true
+                    useNextVariants: true,
+
+                },
+                TextField: {
+                    height:"25%"
                 }
             });
         }

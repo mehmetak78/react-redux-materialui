@@ -38,7 +38,7 @@ class Form2 extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <Card className={classes.card}>
                         <CardContent>
-                            <Typography variant="h6" >
+                            <Typography variant="h6" className={classes.groupHeader}>
                                 First Group
                             </Typography>
                             <FormFields  formFields={formFieldsGroup1} formType={formType} initialize={initialize}/>
@@ -46,7 +46,7 @@ class Form2 extends Component {
                     </Card>
                     <Card className={classes.card}>
                         <CardContent>
-                            <Typography variant="h6" >
+                            <Typography variant="h6" className={classes.groupHeader}>
                                 Second Group
                             </Typography>
                             <FormFields  formFields={formFieldsGroup2} formType={formType} initialize={initialize}/>

@@ -12,6 +12,9 @@ const styles = theme => ({
         marginTop: theme.spacing.unit * 4,
         justifyItems:"center",
         justifyContent:"center"
+    },
+    groupHeader: {
+        marginBottom:20,
     }
 });
 

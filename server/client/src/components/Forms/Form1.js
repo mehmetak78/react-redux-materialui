@@ -37,7 +37,7 @@ class Form1 extends Component {
         return (
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
-                    <Typography variant="h6" >
+                    <Typography variant="h6" className={classes.groupHeader}>
                         First Group
                     </Typography>
                     <FormFields  formFields={formFieldsGroup1} formType={formType}  initialize={initialize}/>

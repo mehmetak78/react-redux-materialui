@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 
 import Grid from '@material-ui/core/Grid';
 
-import {TextField, InputAdornment, FormControlLabel, Checkbox,
-    FormControl, InputLabel, Select, MenuItem, OutlinedInput,
-    Input} from '@material-ui/core';
+
 
 import {Field} from 'redux-form'
 
@@ -48,7 +46,7 @@ class FormFields extends Component {
     render() {
         const {formFields} = this.props;
         return (
-            <Grid container spacing={24}>
+            <Grid container spacing={8}>
                 {formFields.map((item, index) => (
                     this.renderField(item, index)
                 ))}
