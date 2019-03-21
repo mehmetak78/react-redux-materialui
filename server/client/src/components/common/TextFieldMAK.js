@@ -4,11 +4,8 @@ import {TextField, InputAdornment} from '@material-ui/core';
 
 import { withStyles } from "@material-ui/core/styles";
 
-
-
 export const styles = theme => ({
         root: {
-            //background: "black"
             margin:0,
             padding:0
         },
@@ -27,7 +24,6 @@ export const styles = theme => ({
 
         }
 });
-
 
 const TextFieldMAK = (props) => {
 
@@ -54,8 +50,9 @@ const TextFieldMAK = (props) => {
                 inputProps = {startAdornment: <InputAdornment position="start">{item.adornment.text}</InputAdornment>}
         }
     }
+    inputProps = {...inputProps, classes: { input: classes.input  }};
     if (variant === 'outlined') {
-        inputProps = {...inputProps, classes: { input: classes.input  }};
+
         inputLabelProps= {...inputLabelProps, className: input.value ||props.meta.active
                 ? classes.label
                 : classes.label + " " + classes.outlinedLabelStyleEmpty}
@@ -65,16 +62,13 @@ const TextFieldMAK = (props) => {
         inputLabelProps= {...inputLabelProps, className: classes.label}
     }
 
-
-
-
     let required = false;
     if (item.validations && item.validations.emptyCheck) {
         required = true;
     }
 
     return (
-        <div >
+        <div>
             <TextField
                 required={required}
                 fullWidth
