@@ -1,6 +1,9 @@
 import React from "react"
+import ReactDOM from 'react-dom';
 
-import {TextField, InputAdornment} from '@material-ui/core';
+
+import {FormControl, OutlinedInput, InputAdornment} from '@material-ui/core';
+import {InputLabel, Input, FormHelperText} from '@material-ui/core';
 
 import { withStyles } from "@material-ui/core/styles";
 
@@ -9,26 +12,28 @@ export const styles = theme => ({
             margin:0,
             padding:0
         },
+        margin: {
+                margin: 0
+        },
         input: {
-            margin: 0,
+     //       margin: 0,
             padding:5,
         },
         label: {
             color: theme.palette.primary.main,
         },
-        outlinedLabelStyleEmpty: {
-            marginTop: -13
+        outlinedLabelEmpty: {
+            //marginTop: -13
         },
         helperText: {
             marginTop: 0,
-
         }
 });
-
+let labelRef = null;
 const TextFieldMAK = (props) => {
-
-    const {formType, item, input, meta: {touched, error, warning}} = props;
     const {classes} = props;
+    const {formType} = props;
+    const {adornment, validations, autoComplete, label, input, meta: {touched, error, warning}} = props;
 
     const errorBoolean = Boolean(touched && error);
 
@@ -41,52 +46,89 @@ const TextFieldMAK = (props) => {
     let inputLabelProps = {};
     let formHelperTextProps = {className: classes.helperText};
 
-    if (item.adornment) {
-        switch (item.adornment.position) {
+    if (adornment) {
+        switch (adornment.position) {
             case "end":
-                inputProps = {endAdornment: <InputAdornment position="end">{item.adornment.text}</InputAdornment>};
+                inputProps = {endAdornment: <InputAdornment position="end">{adornment.text}</InputAdornment>};
                 break;
             default:
-                inputProps = {startAdornment: <InputAdornment position="start">{item.adornment.text}</InputAdornment>}
+                inputProps = {startAdornment: <InputAdornment position="start">{adornment.text}</InputAdornment>}
         }
     }
-    inputProps = {...inputProps, classes: { input: classes.input  }};
-    if (variant === 'outlined') {
 
+    inputProps = {...inputProps, classes: { input: classes.input  }};
+
+    if (variant === 'outlined') {
         inputLabelProps= {...inputLabelProps, className: input.value ||props.meta.active
                 ? classes.label
-                : classes.label + " " + classes.outlinedLabelStyleEmpty}
+                : classes.label + " " + classes.outlinedLabelEmpty}
     }
     else
     {
         inputLabelProps= {...inputLabelProps, className: classes.label}
     }
 
-    let required = false;
-    if (item.validations && item.validations.emptyCheck) {
-        required = true;
-    }
+    const required = validations && validations.emptyCheck;
+
 
     return (
-        <div>
-            <TextField
-                required={required}
-                fullWidth
-                {...input}
-
-                label={item.label}
-                autoComplete={item.autoComplete}
-                error={errorBoolean}
-                helperText={touched && (error || warning)}
-
-                variant={variant}
-                InputProps={inputProps}
-                InputLabelProps={inputLabelProps}
-                FormHelperTextProps={formHelperTextProps}
-
-            />
+        <div className={classes.root}>
+            <FormControl fullWidth error={errorBoolean} required={required} className={classes.formControl} variant="outlined">
+                <InputLabel
+                    htmlFor={input.name}
+                    ref={ref => {
+                        labelRef = ReactDOM.findDOMNode(ref);
+                    }}
+                >
+                    {label}
+                </InputLabel>
+                <OutlinedInput
+                    {...input}
+                    id={input.name}
+                    aria-describedby={input.name}
+                    autoComplete={autoComplete}
+                    labelWidth={labelRef ? labelRef.offsetWidth : 0}
+                />
+                <FormHelperText id={input.name} >{touched && (error || warning)}</FormHelperText>
+            </FormControl>
         </div>
     );
+
+
+   {/* <FormControl className={classes.formControl} variant="outlined">
+        <InputLabel
+            ref={ref => {
+                labelRef = ReactDOM.findDOMNode(ref);
+            }}
+            htmlFor="component-outlined"
+        >
+            Name
+        </InputLabel>
+        <OutlinedInput
+            id="component-outlined"
+
+            labelWidth={labelRef ? labelRef.offsetWidth : 0}
+        />
+    </FormControl>*/}
+
+    /*return (
+        <div className={classes.root}>
+            <FormControl fullWidth>
+                <TextField
+                    {...input}
+                    label={label}
+                    required={required}
+                    autoComplete={autoComplete}
+                    error={errorBoolean}
+                    helperText={touched && (error || warning)}
+                    variant={variant}
+                    InputProps={inputProps}
+                    InputLabelProps={inputLabelProps}
+                    FormHelperTextProps={formHelperTextProps}
+                />
+            </FormControl>
+        </div>
+    );*/
 };
 
 export default withStyles(styles)(TextFieldMAK);

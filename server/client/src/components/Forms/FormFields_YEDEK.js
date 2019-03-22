@@ -14,7 +14,6 @@ import SelectMAK from "../common/SelectMAK";
 class FormFields extends Component {
 
     componentWillMount() {
-        const {initialize} = this.props;
         let initValues = {};
 
         const {formFields} = this.props;
@@ -25,10 +24,10 @@ class FormFields extends Component {
             }
         });
 
-        initialize(initValues);
+        this.props.initialize(initValues);
     };
 
-    renderField = (item, index) => {
+      renderField = (item, index) => {
         let renderComponent;
 
         switch (item.renderType) {
@@ -44,8 +43,6 @@ class FormFields extends Component {
                     label={item.label}
                     autoComplete={item.autoComplete}
                     item={item}
-                    adornment={item.adornment}
-                    validations={item.validations}
                     {...this.props}
                     component={renderComponent}/>
             </Grid>
