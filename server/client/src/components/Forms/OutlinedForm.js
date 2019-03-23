@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {reduxForm } from 'redux-form'
 import {validateForm, warnForm} from "./formControlHelper";
 
-import {formFieldsGroup1, formFieldsGroup2, formType} from "../../data/FormsData/Form2Data";
+import {formFieldsGroup1, formFieldsGroup2, formType} from "../../data/FormsData/OutlinedFormData";
 import FormFields from "./FormFields"
 
 import {Typography, Card, CardContent, Button, Grid} from '@material-ui/core';
@@ -38,7 +38,7 @@ class OutlinedForm extends Component {
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
                     <Card className={classes.card}>
-                        <CardContent>
+                        <CardContent className={classes.cardContent}>
                             <Typography variant="h6" className={classes.groupHeader}>
                                 First Group
                             </Typography>
@@ -46,7 +46,7 @@ class OutlinedForm extends Component {
                         </CardContent>
                     </Card>
                     <Card className={classes.card}>
-                        <CardContent>
+                        <CardContent className={classes.cardContent}>
                             <Typography variant="h6" className={classes.groupHeader}>
                                 Second Group
                             </Typography>

@@ -5,6 +5,9 @@ const styles = theme => ({
         minWidth: 275,
         marginTop: 5,
     },
+    cardContent: {
+        paddingTop:5,
+    },
     button: {
         margin: theme.spacing.unit,
     },
@@ -13,6 +16,7 @@ const styles = theme => ({
         justifyItems:"center",
         justifyContent:"center"
     },
+
     groupHeader: {
         marginBottom:5,
     }

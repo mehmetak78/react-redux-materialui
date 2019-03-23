@@ -3,11 +3,11 @@ import React, {Component} from 'react';
 import {reduxForm } from 'redux-form'
 import {validateForm, warnForm} from "./formControlHelper";
 
-import {formFieldsGroup1, formType} from "../../data/FormsData/Form1Data";
+import {formFieldsGroup1, formType} from "../../data/FormsData/StandardFormData";
 import FormFields from "./FormFields"
 
 
-import {Typography, Button, Grid} from '@material-ui/core';
+import {Typography, Button, Grid, Card, CardContent} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
 
@@ -37,10 +37,16 @@ class StandardForm extends Component {
         return (
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
-                    <Typography variant="h6" className={classes.groupHeader}>
-                        First Group
-                    </Typography>
-                    <FormFields  formFields={formFieldsGroup1} formType={formType}  initialize={initialize}/>
+
+                    <Card className={classes.card}>
+                        <CardContent className={classes.cardContent}>
+                            <Typography variant="h6" className={classes.groupHeader}>
+                                First Group
+                            </Typography>
+                            <FormFields  formFields={formFieldsGroup1} formType={formType} initialize={initialize}/>
+                        </CardContent>
+                    </Card>
+
 
                     <Grid container className={classes.buttons}>
                         <Grid item>
