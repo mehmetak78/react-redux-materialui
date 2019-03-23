@@ -68,48 +68,28 @@ const FieldComponentMAK = (props) => {
     const {formType} = props;
     const {item, input, meta: {touched, error, warning}} = props;
 
-    let variant = 'standard';
+
     const lblId = "lbl_"+input.name;
-    let labelWidth= 0;
-    let labelHeight= 0;
+
+    let variant = 'standard';
     if (formType && formType.variant) {
         variant = formType.variant;
-        const lbl = document.getElementById(lblId);
-        labelWidth = lbl ? lbl.offsetWidth: 0;
-        labelHeight = lbl ? lbl.offsetHeight: 0;
+
     }
-
-    let labelClassName = classes.label;
-    let radioStyle = {};
-    let checkBoxStyle = {};
-    let radioGroupClassName =classes.radioGroup;
-    let radioLabelClassName =classes.radioLabel;
-
-
-    if (input.value || props.meta.active) {
-        labelClassName = labelClassName + " " + classes.focused;
-    }
-
-    radioStyle = {height:labelHeight};
-    if (variant === 'outlined') {
-        checkBoxStyle = {height:labelHeight}
-        radioGroupClassName = classes.radioGroupOutlined;
-        radioLabelClassName = classes.radioLabelOutlined;
-    }
-
-    if (variant === 'outlined' && !input.value && !props.meta.active) {
-        labelClassName = labelClassName + " " + classes.label + " " + classes.outlinedLabelEmpty;
-    }
-
-    const errorBoolean = Boolean(touched && error);
-    const required = item.validations && item.validations.emptyCheck;
-
-    let adornmentProps = {};
 
     const renderLabelField = () =>  {
         switch (item.renderType) {
             case "TextField" :
             case "Select" :
+                let labelClassName = classes.label;
+                if (variant === 'outlined' && !input.value && !props.meta.active) {
+                    labelClassName = labelClassName + " " + classes.label + " " + classes.outlinedLabelEmpty;
+                }
+
+                if (input.value || props.meta.active) {
+                    labelClassName = labelClassName + " " + classes.focused;
+                }
+
                 return (
                     <InputLabel
                         className={labelClassName}
@@ -122,6 +102,13 @@ const FieldComponentMAK = (props) => {
             case "CheckBox" :
                 const checked = Boolean(input.value);
                 const tmpInput = {...input, value: input.value.toString()};
+                let checkBoxStyle = {};
+                let labelHeight= 0;
+                const lbl = document.getElementById(lblId);
+                labelHeight = lbl ? lbl.offsetHeight: 0;
+                if (variant === 'outlined') {
+                    checkBoxStyle = {height:labelHeight};
+                }
                 return (
                     <FormControlLabel
                         control={
@@ -135,6 +122,10 @@ const FieldComponentMAK = (props) => {
                     />
                 );
             case "Radio" :
+                let radioLabelClassName =classes.radioLabel;
+                if (variant === 'outlined') {
+                    radioLabelClassName = classes.radioLabelOutlined;
+                }
                 return (
                     <div >
                         <FormLabel className={radioLabelClassName} >Gender</FormLabel>
@@ -157,6 +148,8 @@ const FieldComponentMAK = (props) => {
             }
 
         }
+
+        let adornmentProps = {};
         if (item.adornment) {
             switch (item.adornment.position) {
                 case "end":
@@ -183,6 +176,10 @@ const FieldComponentMAK = (props) => {
                     />
                 );
             case "outlined" :
+                let labelWidth= 0;
+                const lblId = "lbl_"+input.name;
+                const lbl = document.getElementById(lblId);
+                labelWidth = lbl ? lbl.offsetWidth: 0;
                 return (
                     <OutlinedInput
                         {...input}
@@ -232,6 +229,13 @@ const FieldComponentMAK = (props) => {
                     </Select>
                 );
             case "Radio" :
+                const lbl = document.getElementById(lblId);
+                const labelHeight = lbl ? lbl.offsetHeight: 0;
+                const radioStyle = {height:labelHeight};
+                let radioGroupClassName =classes.radioGroup;
+                if (variant === 'outlined') {
+                    radioGroupClassName = classes.radioGroupOutlined;
+                }
                 return (
                     <RadioGroup {...input} className={radioGroupClassName}>
                         {item.options.map( (option, index) => (
@@ -251,7 +255,9 @@ const FieldComponentMAK = (props) => {
 
     return (
         <div >
-            <FormControl fullWidth error={errorBoolean} required={required} variant={variant}>
+            <FormControl fullWidth
+                         error={Boolean(touched && error)}
+                         required={item.validations && item.validations.emptyCheck} variant={variant}>
                 {renderLabelField()}
                 {renderField()}
                 {renderHelperText()}
