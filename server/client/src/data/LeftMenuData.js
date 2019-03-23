@@ -90,13 +90,13 @@ const leftMenuData = [
         icon: "FormsIcon",
         subMenu: [
             {
-                title: "Form 1",
-                path: "/FormPages/Form1",
+                title: "Standard Form",
+                path: "/FormPages/StandardForm",
                 icon: "FormsIcon"
             },
             {
-                title: "Form 2",
-                path: "/FormPages/Form2",
+                title: "Outlined Form",
+                path: "/FormPages/OutlinedForm",
                 icon: "FormsIcon"
             }
         ]

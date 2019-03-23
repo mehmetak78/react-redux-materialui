@@ -5,7 +5,7 @@ import React from 'react'
 
 
 
-import Form1 from "../../components/Forms/Form1";
+import StandardForm from "../../components/Forms/StandardForm";
 
 
 import {Typography, Card, CardContent} from '@material-ui/core';
@@ -14,7 +14,7 @@ import styles from "../../styles/FormsPagesStyles";
 
 
 
-class Form1Page extends React.Component {
+class StandardFormPage extends React.Component {
     handleSubmit = (values) => {
         console.log("Handle Submit With Values");
         console.log(values);
@@ -29,7 +29,7 @@ class Form1Page extends React.Component {
                 </Typography>
                 <Card className={classes.card}>
                     <CardContent>
-                        <Form1 onSubmit={this.handleSubmit} />
+                        <StandardForm onSubmit={this.handleSubmit} />
                     </CardContent>
                 </Card>
             </div>
@@ -37,4 +37,4 @@ class Form1Page extends React.Component {
     }
 }
 
-export default withStyles(styles)(Form1Page);
+export default withStyles(styles)(StandardFormPage);

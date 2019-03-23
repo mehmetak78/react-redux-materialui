@@ -54,7 +54,7 @@ export const styles = theme => ({
         fontSize:"70%",
         color: theme.palette.primary.main,
         zIndex: 1,
-        backgroundColor:theme.palette.background.default,
+        backgroundColor:theme.palette.background.paper,
         position:"absolute",
         top:-7,
         paddingLeft:5,

@@ -73,6 +73,7 @@ class MainPage extends Component {
 
         const {openLoginPage, closeLoginPage, loginUser, logoutUser, toggleDrawer, toggleTheme} = this.props;
 
+console.log(this.getTheme());
 
         return (
             <BrowserRouter>

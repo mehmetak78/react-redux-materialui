@@ -3,57 +3,44 @@ import React, {Component} from 'react';
 import {reduxForm } from 'redux-form'
 import {validateForm, warnForm} from "./formControlHelper";
 
-import {formFieldsGroup1, formFieldsGroup2, formType} from "../../data/FormsData/Form2Data";
+import {formFieldsGroup1, formType} from "../../data/FormsData/Form1Data";
 import FormFields from "./FormFields"
 
-import {Typography, Card, CardContent, Button, Grid} from '@material-ui/core';
 
-
+import {Typography, Button, Grid} from '@material-ui/core';
 import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
 
 
-
 const validate = (values) => {
-    const formFields = [...formFieldsGroup1,...formFieldsGroup2];
+    const formFields = [...formFieldsGroup1];
     return validateForm(formFields, values);
 };
 
 const warn = (values) => {
-    const formFields = [...formFieldsGroup1,...formFieldsGroup2];
+    const formFields = [...formFieldsGroup1];
     return warnForm(formFields, values);
 };
 
-class Form2 extends Component {
+class StandardForm extends Component {
+
     handleSubmit = (e, values) =>  {
         e.preventDefault();
         const {handleSubmit, reset} = this.props;
         handleSubmit(values);
         reset();
     };
+
     render() {
         const {pristine, reset, submitting, initialize} = this.props;
         const {classes} = this.props;
         return (
             <React.Fragment>
                 <form onSubmit={this.handleSubmit}>
-                    <Card className={classes.card}>
-                        <CardContent>
-                            <Typography variant="h6" className={classes.groupHeader}>
-                                First Group
-                            </Typography>
-                            <FormFields  formFields={formFieldsGroup1} formType={formType} initialize={initialize}/>
-                        </CardContent>
-                    </Card>
-                    <Card className={classes.card}>
-                        <CardContent>
-                            <Typography variant="h6" className={classes.groupHeader}>
-                                Second Group
-                            </Typography>
-                            <FormFields  formFields={formFieldsGroup2} formType={formType} initialize={initialize}/>
-
-                        </CardContent>
-                    </Card>
+                    <Typography variant="h6" className={classes.groupHeader}>
+                        First Group
+                    </Typography>
+                    <FormFields  formFields={formFieldsGroup1} formType={formType}  initialize={initialize}/>
 
                     <Grid container className={classes.buttons}>
                         <Grid item>
@@ -69,16 +56,13 @@ class Form2 extends Component {
                             </Button>
                         </Grid>
                     </Grid>
-
                 </form>
             </React.Fragment>
         );
     }
 }
-
 export default reduxForm({
-    form: 'form2',        // a unique identifier for this form
+    form: 'form1',        // a unique identifier for this form
     validate,                   // <--- validation function given to redux-form
     warn                        // <--- warning function given to redux-form
-})(withStyles(styles)(Form2))
-
+})(withStyles(styles)(StandardForm))
