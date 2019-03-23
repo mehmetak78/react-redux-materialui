@@ -50,6 +50,20 @@ export const formFieldsGroup1 = [
         }
     },
     {
+        name: "genderSelect",
+        label: "Gender",
+        type: "radio",
+        renderType: "Radio",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        options: [
+            {title:'Male',value:"male"},
+            {title:'Female',value:"female"},
+            {title:'Other',value:"other"},
+        ],
+        value:"male"
+
+    },
+    {
         name: "address1",
         label: "Address Line 1",
         type: "text",
@@ -180,6 +194,7 @@ export const formFieldsGroup1 = [
         ],
 
     },
+
 
 
 ];

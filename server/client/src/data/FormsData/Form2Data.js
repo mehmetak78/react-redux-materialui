@@ -251,6 +251,37 @@ export const formFieldsGroup2 = [
         ],
 
     },
+    {
+        name: "genderSelect",
+        label: "Gender",
+        type: "radio",
+        renderType: "Radio",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        options: [
+            {title:'Male',value:"male"},
+            {title:'Female',value:"female"},
+            {title:'Other',value:"other"},
+        ],
+        value:"male"
+
+    },
+    {
+        name: "ageSelect2",
+        label: "Age2",
+        type: "select",
+        renderType: "Select",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+        },
+        options: [
+            {title:'None',value:""},
+            {title:'Ten',value:10},
+            {title:'Twelve',value:20},
+            {title:'Thirty',value:30},
+        ],
+
+    },
 ];
 
 

@@ -4,29 +4,60 @@ import React from "react"
 import {FormControl, OutlinedInput, InputAdornment} from '@material-ui/core';
 import {InputLabel, Input, FormHelperText} from '@material-ui/core';
 import {Select, MenuItem, Checkbox, FormControlLabel} from '@material-ui/core';
+import {FormLabel, RadioGroup, Radio} from '@material-ui/core';
 
 import { withStyles } from "@material-ui/core/styles";
 
 export const styles = theme => ({
-        input: {
-            padding:5
-        },
-        select: {
-            padding:5
-        },
-        label: {
-            //color: theme.palette.primary.main,
-        },
-        outlinedLabelEmpty: {
-            marginTop: -13
-        },
-        helperText: {
-            marginTop: 1,
-        },
-        focused: {
-            color: theme.palette.primary.main,
-            fontWeight: "bold"
-    }
+    input: {
+        padding:5
+    },
+    select: {
+        padding:5
+    },
+    label: {
+        //color: theme.palette.primary.main,
+    },
+    outlinedLabelEmpty: {
+        marginTop: -13
+    },
+    helperText: {
+        marginTop: 1,
+    },
+    focused: {
+        color: theme.palette.primary.main,
+        fontWeight: "bold"
+    },
+    radioGroup: {
+        paddingTop:5,
+
+    },
+    radioGroupOutlined: {
+        padding:5,
+        border:"solid lightgray 1px",
+        borderRadius:"5px",
+    },
+    radio: {
+        paddingTop:0,
+        paddingLeft:15
+    },
+    radioLabel: {
+        fontWeight: "bold",
+        fontSize:"70%",
+        color: theme.palette.primary.main,
+    },
+    radioLabelOutlined: {
+        fontWeight: "bold",
+        fontSize:"70%",
+        color: theme.palette.primary.main,
+        zIndex: 1,
+        backgroundColor:theme.palette.background.default,
+        position:"absolute",
+        top:-7,
+        paddingLeft:5,
+        paddingRight:5,
+        marginLeft:8,
+    },
 });
 
 const FieldComponentMAK = (props) => {
@@ -46,14 +77,21 @@ const FieldComponentMAK = (props) => {
     }
 
     let labelClassName = classes.label;
+    let radioStyle = {};
     let checkBoxStyle = {};
+    let radioGroupClassName =classes.radioGroup;
+    let radioLabelClassName =classes.radioLabel;
+
 
     if (input.value || props.meta.active) {
         labelClassName = labelClassName + " " + classes.focused;
     }
 
+    radioStyle = {height:labelHeight};
     if (variant === 'outlined') {
         checkBoxStyle = {height:labelHeight}
+        radioGroupClassName = classes.radioGroupOutlined;
+        radioLabelClassName = classes.radioLabelOutlined;
     }
 
     if (variant === 'outlined' && !input.value && !props.meta.active) {
@@ -132,6 +170,12 @@ const FieldComponentMAK = (props) => {
                         label={item.label}
                     />
                 );
+            case "Radio" :
+                return (
+                    <div >
+                        <FormLabel className={radioLabelClassName} >Gender</FormLabel>
+                    </div>
+                );
             default:
                 return "";
         }
@@ -167,6 +211,19 @@ const FieldComponentMAK = (props) => {
                         ))}
                     </Select>
                 );
+            case "Radio" :
+                return (
+                    <RadioGroup {...input} className={radioGroupClassName}>
+                        {item.options.map( (option, index) => (
+                            <FormControlLabel
+                                className={classes.radio}
+                                key={index} value={option.value}
+                                control={<Radio color="primary" style={radioStyle}/>}
+                                label={option.title}
+                            />
+                        ))}
+                    </RadioGroup>
+                );
             case "CheckBox" : return "";
             default: return ""
         }
@@ -178,6 +235,7 @@ const FieldComponentMAK = (props) => {
                 {renderLabelField()}
                 {renderField()}
                 {renderHelperText()}
+
             </FormControl>
         </div>
     );
