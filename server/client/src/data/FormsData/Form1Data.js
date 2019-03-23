@@ -9,6 +9,8 @@ export const formFieldsGroup1 = [
         label: "First Name",
         type: "text",
         renderType: "TextField",
+        rows: 2,
+        rowsMax:4,
         autoComplete: "firstName",
         value:"Mehmet",
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
@@ -19,12 +21,12 @@ export const formFieldsGroup1 = [
         validations: {
             emptyCheck: true,
             minLength: 3,
-            maxLength: 15
+            maxLength: 30
         } ,
         warnings: {
             emptyCheck: true,
             minLength: 5,
-            maxLength: 15
+            maxLength: 30
         }
     },
     {

@@ -10,16 +10,18 @@ export const formFieldsGroup1 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "firstName",
+        rows: 2,
+        rowsMax:4,
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
-            maxLength: 15
+            maxLength: 30
         } ,
         warnings: {
             emptyCheck: true,
             minLength: 5,
-            maxLength: 15
+            maxLength: 30
         }
     },
     {

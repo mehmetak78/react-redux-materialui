@@ -12,6 +12,9 @@ export const styles = theme => ({
     input: {
         padding:5
     },
+    multiline: {
+        padding:0,
+    },
     select: {
         padding:5
     },
@@ -103,45 +106,6 @@ const FieldComponentMAK = (props) => {
 
     let adornmentProps = {};
 
-    const renderInputField = () => {
-        if (item.adornment) {
-            switch (item.adornment.position) {
-                case "end":
-                    adornmentProps = {endAdornment: <InputAdornment position="end">{item.adornment.text}</InputAdornment>};
-                    break;
-                default:
-                    adornmentProps = {startAdornment: <InputAdornment position="start">{item.adornment.text}</InputAdornment>}
-            }
-        }
-        switch (variant) {
-            case "standard" :
-                return (
-                    <Input
-                        {...input}
-                        classes={{input: classes.input}}
-                        id={input.name}
-                        aria-describedby={input.name}
-                        autoComplete={item.autoComplete}
-                        {...adornmentProps}
-
-                    />
-                );
-            case "outlined" :
-                return (
-                    <OutlinedInput
-                        {...input}
-                        classes={{input: classes.input}}
-                        id={input.name}
-                        aria-describedby={input.name}
-                        autoComplete={item.autoComplete}
-                        labelWidth={labelWidth}
-                        {...adornmentProps}
-                    />
-                    );
-            default: return ""
-        }
-    };
-
     const renderLabelField = () =>  {
         switch (item.renderType) {
             case "TextField" :
@@ -178,6 +142,62 @@ const FieldComponentMAK = (props) => {
                 );
             default:
                 return "";
+        }
+    };
+
+    const renderInputField = () => {
+        let rows=1;
+        let rowsMax=null;
+        let multiline = false;
+        if (item.rows && item.rows>1) {
+            rows = item.rows;
+            multiline = true;
+            if (item.rowsMax) {
+                rowsMax = item.rowsMax;
+            }
+
+        }
+        if (item.adornment) {
+            switch (item.adornment.position) {
+                case "end":
+                    adornmentProps = {endAdornment: <InputAdornment position="end">{item.adornment.text}</InputAdornment>};
+                    break;
+                default:
+                    adornmentProps = {startAdornment: <InputAdornment position="start">{item.adornment.text}</InputAdornment>}
+            }
+        }
+        switch (variant) {
+            case "standard" :
+                return (
+                    <Input
+                        {...input}
+                        classes={{input: classes.input, multiline: classes.multiline}}
+                        multiline = {multiline}
+                        rows={rows}
+                        rowsMax={rowsMax}
+                        id={input.name}
+                        aria-describedby={input.name}
+                        autoComplete={item.autoComplete}
+                        {...adornmentProps}
+
+                    />
+                );
+            case "outlined" :
+                return (
+                    <OutlinedInput
+                        {...input}
+                        classes={{input: classes.input, multiline: classes.multiline}}
+                        id={input.name}
+                        multiline = {multiline}
+                        rows={rows}
+                        rowsMax={rowsMax}
+                        aria-describedby={input.name}
+                        autoComplete={item.autoComplete}
+                        labelWidth={labelWidth}
+                        {...adornmentProps}
+                    />
+                );
+            default: return ""
         }
     };
 
