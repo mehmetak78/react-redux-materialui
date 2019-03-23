@@ -159,7 +159,7 @@ export const formFieldsGroup2 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "firstName",
-        size: {xs:12,sm:6,md:4,lg:3,xl:2},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -177,7 +177,7 @@ export const formFieldsGroup2 = [
         type: "text",
         renderType: "TextField",
         autoComplete: "lastName",
-        size: {xs:12,sm:6,md:4,lg:3,xl:2},
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
         validations: {
             emptyCheck: true,
             minLength: 3,
@@ -190,11 +190,59 @@ export const formFieldsGroup2 = [
         }
     },
     {
+        name: "address2",
+        label: "Address Line 2",
+        type: "text",
+        renderType: "TextField",
+        autoComplete: "address-line2",
+        size: {xs:12,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: false,
+            minLength: 3,
+            maxLength: 15
+        } ,
+        warnings: {
+            emptyCheck: false,
+            minLength: 5,
+            maxLength: 15
+        }
+    },
+    {
+        name: "addressCheck",
+        label: "Default Address",
+        type: "checkbox",
+        renderType: "CheckBox",
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        value:true
+    },
+    {
+        name: "address1",
+        label: "Address Line 1",
+        type: "text",
+        renderType: "TextField",
+        autoComplete: "address-line1",
+        size: {xs:12,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+            minLength: 3,
+            maxLength: 15
+        } ,
+        warnings: {
+            emptyCheck: true,
+            minLength: 5,
+            maxLength: 15
+        }
+    },
+
+    {
         name: "ageSelect",
-        label: "A",
+        label: "Age",
         type: "select",
         renderType: "Select",
         size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+        },
         options: [
             {title:'None',value:""},
             {title:'Ten',value:10},

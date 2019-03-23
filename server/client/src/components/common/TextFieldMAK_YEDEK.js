@@ -15,12 +15,13 @@ export const styles = theme => ({
         },
         label: {
             color: theme.palette.primary.main,
+            fontWeight: "bold"
         },
         outlinedLabelStyleEmpty: {
             marginTop: -13
         },
         helperText: {
-            marginTop: 0,
+            marginTop: 1,
 
         }
 });

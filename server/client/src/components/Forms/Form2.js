@@ -13,6 +13,7 @@ import {withStyles} from "@material-ui/core/styles/index";
 import styles from "../../styles/FormsPagesStyles";
 
 
+
 const validate = (values) => {
     const formFields = [...formFieldsGroup1,...formFieldsGroup2];
     return validateForm(formFields, values);
@@ -50,6 +51,7 @@ class Form2 extends Component {
                                 Second Group
                             </Typography>
                             <FormFields  formFields={formFieldsGroup2} formType={formType} initialize={initialize}/>
+
                         </CardContent>
                     </Card>
 

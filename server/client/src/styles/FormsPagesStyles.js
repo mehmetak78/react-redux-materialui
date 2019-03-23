@@ -3,7 +3,7 @@ const styles = theme => ({
     appBarSpacer: theme.mixins.toolbar,
     card: {
         minWidth: 275,
-        marginTop: 20,
+        marginTop: 5,
     },
     button: {
         margin: theme.spacing.unit,
@@ -14,7 +14,7 @@ const styles = theme => ({
         justifyContent:"center"
     },
     groupHeader: {
-        marginBottom:20,
+        marginBottom:5,
     }
 });
 
