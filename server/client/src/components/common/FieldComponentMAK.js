@@ -6,6 +6,9 @@ import {InputLabel, Input, FormHelperText} from '@material-ui/core';
 import {Select, MenuItem, Checkbox, FormControlLabel} from '@material-ui/core';
 import {FormLabel, RadioGroup, Radio} from '@material-ui/core';
 
+import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
+import CheckBoxIcon from '@material-ui/icons/CheckBox';
+
 import { withStyles } from "@material-ui/core/styles";
 
 export const styles = theme => ({
@@ -40,6 +43,7 @@ export const styles = theme => ({
         border:"solid lightgray 1px",
         borderRadius:"5px",
     },
+
     radio: {
         paddingTop:0,
         paddingLeft:15
@@ -60,6 +64,18 @@ export const styles = theme => ({
         paddingLeft:5,
         paddingRight:5,
         marginLeft:8,
+    },
+    checked: {
+        color: "green[500]",
+    },
+
+    checkBox: {
+        marginLeft:0,
+        marginRight:0
+    },
+    sizeIcon: {
+        fontSize: 10,
+
     },
 });
 
@@ -110,9 +126,13 @@ const FieldComponentMAK = (props) => {
                     checkBoxStyle = {height:labelHeight};
                 }
                 return (
-                    <FormControlLabel
+                    <FormControlLabel className={classes.checkBox}
                         control={
-                            <Checkbox style={checkBoxStyle}
+                            <Checkbox
+                                      style={checkBoxStyle}
+                                     // className={classes.size}
+                                      icon={<CheckBoxOutlineBlankIcon className={classes.sizeIcon} />}
+                                      checkedIcon={<CheckBoxIcon className={classes.sizeIcon} />}
                                 color="primary"
                                 checked={checked}
                                 {...tmpInput}
@@ -257,7 +277,8 @@ const FieldComponentMAK = (props) => {
         <div >
             <FormControl fullWidth
                          error={Boolean(touched && error)}
-                         required={item.validations && item.validations.emptyCheck} variant={variant}>
+                         required={item.validations && item.validations.emptyCheck}
+                         variant={variant}>
                 {renderLabelField()}
                 {renderField()}
                 {renderHelperText()}
