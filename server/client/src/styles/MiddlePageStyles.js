@@ -5,6 +5,7 @@ const styles = theme => ({
         height: '100vh',
         overflow: 'auto',
         backgroundColor: theme.palette.background.default,
+        minWidth:500
     },
 });
 

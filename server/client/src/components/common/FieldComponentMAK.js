@@ -8,6 +8,8 @@ import {FormLabel, RadioGroup, Radio} from '@material-ui/core';
 
 import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
 import CheckBoxIcon from '@material-ui/icons/CheckBox';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 
 import { withStyles } from "@material-ui/core/styles";
 
@@ -36,17 +38,22 @@ export const styles = theme => ({
     },
     radioGroup: {
         paddingTop:5,
+        display:"block",
+
 
     },
     radioGroupOutlined: {
-        padding:5,
+        padding:3,
+        display:"block",
         border:"solid lightgray 1px",
         borderRadius:"5px",
+        height:"40%"
     },
 
     radio: {
         paddingTop:0,
-        paddingLeft:15
+        paddingLeft:15,
+        height:"0.85rem"
     },
     radioLabel: {
         fontWeight: "bold",
@@ -65,16 +72,13 @@ export const styles = theme => ({
         paddingRight:5,
         marginLeft:8,
     },
-    checked: {
-        color: "green[500]",
-    },
 
     checkBox: {
         marginLeft:0,
         marginRight:0
     },
     sizeIcon: {
-        fontSize: 10,
+        fontSize: "1.25rem",
 
     },
 });
@@ -130,7 +134,6 @@ const FieldComponentMAK = (props) => {
                         control={
                             <Checkbox
                                       style={checkBoxStyle}
-                                     // className={classes.size}
                                       icon={<CheckBoxOutlineBlankIcon className={classes.sizeIcon} />}
                                       checkedIcon={<CheckBoxIcon className={classes.sizeIcon} />}
                                 color="primary"
@@ -257,12 +260,18 @@ const FieldComponentMAK = (props) => {
                     radioGroupClassName = classes.radioGroupOutlined;
                 }
                 return (
-                    <RadioGroup {...input} className={radioGroupClassName}>
+                    <RadioGroup {...input} className={radioGroupClassName} >
                         {item.options.map( (option, index) => (
                             <FormControlLabel
                                 className={classes.radio}
                                 key={index} value={option.value}
-                                control={<Radio color="primary" style={radioStyle}/>}
+                                control={
+                                    <Radio
+                                        color="primary" style={radioStyle}
+                                        icon={<RadioButtonUncheckedIcon className={classes.sizeIcon} />}
+                                        checkedIcon={<RadioButtonCheckedIcon className={classes.sizeIcon} />}
+                                    />
+                                }
                                 label={option.title}
                             />
                         ))}

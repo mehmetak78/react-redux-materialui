@@ -40,7 +40,7 @@ class FormFields extends Component {
     render() {
         const {formFields} = this.props;
         return (
-            <Grid container spacing={8}>
+            <Grid container spacing={8} >
                 {formFields.map((item, index) => (
                     this.renderField(item, index)
                 ))}
