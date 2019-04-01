@@ -44,8 +44,6 @@ export const styles = theme => ({
     radioGroup: {
         paddingTop:5,
         display:"block",
-
-
     },
     radioGroupOutlined: {
         padding:3,
@@ -58,16 +56,16 @@ export const styles = theme => ({
     radio: {
         paddingTop:0,
         paddingLeft:15,
-        height:"0.85rem"
+        height:theme.typography.fontSize*0.5,
     },
     radioLabel: {
         fontWeight: "bold",
-        fontSize:"70%",
+        fontSize:theme.typography.fontSize*0.9,
         color: theme.palette.primary.main,
     },
     radioLabelOutlined: {
         fontWeight: "bold",
-        fontSize:"70%",
+        fontSize:theme.typography.fontSize*0.9,
         color: theme.palette.primary.main,
         zIndex: 1,
         backgroundColor:theme.palette.background.paper,
@@ -83,8 +81,7 @@ export const styles = theme => ({
         marginRight:0
     },
     sizeIcon: {
-        fontSize: "1.25rem",
-
+        fontSize: theme.typography.fontSize*1.5,
     },
 });
 
@@ -92,7 +89,6 @@ const FieldComponentMAK = (props) => {
     const {classes} = props;
     const {formType} = props;
     const {item, input, meta: {touched, error, warning}} = props;
-
 
     const lblId = "lbl_"+input.name;
 
@@ -257,9 +253,6 @@ const FieldComponentMAK = (props) => {
                     </Select>
                 );
             case "Radio" :
-                const lbl = document.getElementById(lblId);
-                const labelHeight = lbl ? lbl.offsetHeight: 0;
-                const radioStyle = {height:labelHeight};
                 let radioGroupClassName =classes.radioGroup;
                 if (variant === 'outlined') {
                     radioGroupClassName = classes.radioGroupOutlined;
@@ -272,7 +265,7 @@ const FieldComponentMAK = (props) => {
                                 key={index} value={option.value}
                                 control={
                                     <Radio
-                                        color="primary" style={radioStyle}
+                                        color="primary"
                                         icon={<RadioButtonUncheckedIcon className={classes.sizeIcon} />}
                                         checkedIcon={<RadioButtonCheckedIcon className={classes.sizeIcon} />}
                                     />
