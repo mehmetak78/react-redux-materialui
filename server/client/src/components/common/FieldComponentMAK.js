@@ -15,7 +15,8 @@ import { withStyles } from "@material-ui/core/styles";
 
 export const styles = theme => ({
     input: {
-        padding:5
+        padding:5,
+        fontSize: theme.typography.fontSize * 0.9
     },
     multiline: {
         padding:0,
@@ -25,17 +26,21 @@ export const styles = theme => ({
     },
     label: {
         //color: theme.palette.primary.main,
+        //fontSize: theme.typography.fontSize * 1.1
+    },
+    focusedLabel: {
+        color: theme.palette.primary.main,
+        fontWeight: "bold",
+        fontSize: theme.typography.fontSize * 1.2
     },
     outlinedLabelEmpty: {
         marginTop: -13
     },
     helperText: {
         marginTop: 1,
+        fontSize: theme.typography.fontSize * 0.8
     },
-    focused: {
-        color: theme.palette.primary.main,
-        fontWeight: "bold"
-    },
+
     radioGroup: {
         paddingTop:5,
         display:"block",
@@ -106,8 +111,8 @@ const FieldComponentMAK = (props) => {
                     labelClassName = labelClassName + " " + classes.label + " " + classes.outlinedLabelEmpty;
                 }
 
-                if (input.value || props.meta.active) {
-                    labelClassName = labelClassName + " " + classes.focused;
+                if (input.value || props.meta.active || item.adornment) {
+                    labelClassName = labelClassName + " " + classes.focusedLabel;
                 }
 
                 return (
