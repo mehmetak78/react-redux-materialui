@@ -192,8 +192,8 @@ export const formFieldsGroup2 = [
         }
     },
     {
-        name: "address2",
-        label: "Address Line 2",
+        name: "address2b",
+        label: "Address Line 2b",
         type: "text",
         renderType: "TextField",
         autoComplete: "address-line2",
@@ -218,8 +218,8 @@ export const formFieldsGroup2 = [
         value:true
     },
     {
-        name: "address1",
-        label: "Address Line 1",
+        name: "address1b",
+        label: "Address Line 1b",
         type: "text",
         renderType: "TextField",
         autoComplete: "address-line1",

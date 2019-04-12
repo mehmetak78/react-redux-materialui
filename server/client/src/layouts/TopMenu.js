@@ -51,8 +51,6 @@ const menuIcons = {
     "DoneIcon": DoneIcon
 };
 
-
-
 class TopMenu extends React.Component {
     state = {
         anchorEl: null,
@@ -77,8 +75,6 @@ class TopMenu extends React.Component {
             tmpMenusOpen[item.path] = false;
         });
         this.props.closeMenu(tmpMenusOpen);
-        
-        
     };
 
     handleMobileMenuOpen = event => {
@@ -117,8 +113,6 @@ class TopMenu extends React.Component {
         });
         this.props.setShowSubmenuItemsIcons(showSubMenuItemsIcon);
     };
-
-
 
     handleMenuClick = (item, e) => {
         e.preventDefault();

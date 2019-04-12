@@ -8,6 +8,7 @@
     "classnames": "^2.2.6",
     "echarts": "^4.1.0",
     "echarts-for-react": "^2.0.15-beta.0",
+    "electron": "^4.1.4",
     "rc-queue-anim": "^1.6.12",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -19,11 +20,13 @@
     "redux-form": "^8.1.0",
     "redux-thunk": "^2.3.0"
   },
+  "main": "src/electron-starter.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron ."
   },
   "eslintConfig": {
     "extends": "react-app"

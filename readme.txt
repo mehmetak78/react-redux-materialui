@@ -8,7 +8,8 @@ Run server and client in a single comment  (see the instructions below the file)
     cd server
     npm run dev
 
-
+Ayrı bir terminalde
+	npm run electron
 
 
 

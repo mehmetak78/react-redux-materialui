@@ -7,7 +7,7 @@ export  function configureStore() {
         rootReducer,
         compose(
             applyMiddleware(thunk),
-            window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()  // For Google Chrome extension. Safari fails
+//            window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()  // For Google Chrome extension. Safari fails
             //window.devToolsExtension ? window.devToolsExtension() : f => f                  // For Google Chrome extension. Safari OK
         )
     );

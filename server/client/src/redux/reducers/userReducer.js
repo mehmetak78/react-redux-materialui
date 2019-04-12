@@ -2,7 +2,7 @@ import {OPEN_LOGIN_PAGE, CLOSE_LOGIN_PAGE, LOGIN_USER, LOGOUT_USER} from "../act
 
 const initialState = {
     isLogging: false,
-    isAuthenticated : true,
+    isAuthenticated : false,
     userId : 0,
     userName :""
 };

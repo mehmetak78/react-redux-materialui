@@ -56,7 +56,6 @@ class MiddlePage extends Component {
                     <Route component={PageNotFound}/>
                 </Switch>
             </main>
-
         );
     }
 }

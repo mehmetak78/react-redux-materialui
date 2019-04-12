@@ -70,7 +70,7 @@ export const styles = theme => ({
         zIndex: 1,
         backgroundColor:theme.palette.background.paper,
         position:"absolute",
-        top:-7,
+        top:-5,
         paddingLeft:5,
         paddingRight:5,
         marginLeft:8,
