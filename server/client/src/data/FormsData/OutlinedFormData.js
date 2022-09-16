@@ -25,6 +25,26 @@ export const formFieldsGroup1 = [
         }
     },
     {
+        name: "firstName2",
+        label: "First Name2",
+        type: "text",
+        renderType: "TextField",
+        autoComplete: "firstName",
+        rows: 2,
+        rowsMax:4,
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+            minLength: 3,
+            maxLength: 30
+        } ,
+        warnings: {
+            emptyCheck: true,
+            minLength: 5,
+            maxLength: 30
+        }
+    },
+    {
         name: "lastName",
         label: "Last Name",
         type: "text",
@@ -284,6 +304,47 @@ export const formFieldsGroup2 = [
         ],
 
     },
+    {
+        name: "firstName7",
+        label: "First Name",
+        type: "text",
+        renderType: "TextField",
+        autoComplete: "firstName",
+        rows: 1,
+        rowsMax:4,
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+            minLength: 3,
+            maxLength: 30
+        } ,
+        warnings: {
+            emptyCheck: true,
+            minLength: 5,
+            maxLength: 30
+        }
+    },
+    {
+        name: "firstName8",
+        label: "First Name",
+        type: "text",
+        renderType: "TextField",
+        autoComplete: "firstName",
+        rows: 1,
+        rowsMax:4,
+        size: {xs:12,sm:6,md:6,lg:4,xl:3},
+        validations: {
+            emptyCheck: true,
+            minLength: 3,
+            maxLength: 30
+        } ,
+        warnings: {
+            emptyCheck: true,
+            minLength: 5,
+            maxLength: 30
+        }
+    },
+
 ];
 
 

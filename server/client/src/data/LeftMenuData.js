@@ -3,7 +3,7 @@
 
 const leftMenuData = [
     {
-        title: "Dashboard",
+        title: "Dashboard2",
         path: "/Dashboard",
         icon: "DashboardIcon",
     },
